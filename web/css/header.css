@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*//Gibson header///////////////////////////////////////*/
+header {
+    width: 100%;
+    height: 145px;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.header_wrap {
+    width: 100%;
+    max-width: 1360px;
+    /*outline: 2px solid yellow;*/
+    margin: 0 auto;
+}
+.logo_box {
+    height: 70px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.header_wrap nav {
+    width: 1000px;
+    height: 55px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+    /*outline: 2px solid yellow;*/
+}
+.main_menu {
+    /*outline: 2px solid red;*/
+    height: 100%;
+}
+
+.header_wrap nav .main_menu li {
+    float: left;
+    width: 200px;
+    margin-top: 15px;
+    text-indent: 10px;
+    /*outline: 2px solid blue;*/
+}
+.header_wrap nav .main_menu li a {
+    color: #eee;
+    font-size: 400;
+}
+.header_wrap nav .main_menu li a:hover {
+    color: #daa150;
+    transition: all .6s;
+}
+
+.user_menu {
+    margin-top: 5px;
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+
+.user_menu li {
+    float: left;
+    padding-right: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 6px;
+    padding-bottom: 15px;
+}
+.user_menu .global {
+    position: relative;
+    box-sizing: border-box;
+}
+.user_menu li .language {
+    clear: both;
+    content: "";
+    display: block;
+    width: 56px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 45px;
+    left: -10px;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+.user_menu li .language li {
+    height: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+.user_menu li .language li:hover a {
+    color: #999;
+}
+.user_menu li .language a {
+    color: #eee;
+    font-size: 14px;
+    font-size: 0.8rem;
+}
+
+.sub_menu {
+    width: 100%;
+    height: 270px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+.sub_wrap {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+.sub_menu ul {
+    float: left;
+    width: 200px;
+}
+.sub_menu ul li {
+    line-height: 45px;
+    text-indent: 10px;
+}
+.sub_menu ul li a {
+    color: #eee;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+.sub_menu ul li:hover a {
+    color: #daa150;
+    transition: all .2s;
+}

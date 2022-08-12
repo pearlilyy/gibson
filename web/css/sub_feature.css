@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/*/Gibson sub_feature//////////////////////////////*/
+
+/*/main/////////////////////////////////////////////*/
+
+main {
+    width: 100%;
+    height: 550px;
+    background: url(../imgs/feature_bg.jpg) no-repeat 50% top;
+    text-align: center;
+}
+main h1 {
+    padding-top: 250px;
+    font-size: 40px;
+    color: white;
+    font-family: 'BMDOHYEON','sans-serif';
+}
+main h2 {
+    padding-top: 15px;
+    font-size: 28px;
+    font-weight: 200;
+    color: white;
+    position: relative;
+    font-family: 'Arial','sans-serif';
+}
+main h2:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #daa150;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+/* fix_con ////////////////////////////*********************/
+.feature_con {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.feature_con p {
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 30px;
+    margin-bottom: 150px;
+}
+
+/* process ////////////////////////////*********************/
+.process {
+    width: 100%;
+    height: 800px;
+    background-color: #eee;
+    padding-bottom: 200px;
+}
+.process_wrap {
+    width: 1350px;
+    margin: 0 auto;
+    background: url(../imgs/icons/flyingV.png) no-repeat;
+    background-position: 2% 17%;
+}
+.process_wrap .process_txt {
+    padding-top: 150px;
+}
+.process_wrap .process_txt {
+    width: 1200px;
+    margin: 0 auto;
+}
+.process_wrap .process_txt h3 {
+    margin-bottom: 10px;
+}
+.process_wrap .process_txt p {
+    color: #e3ab80;
+    margin-bottom: 60px;
+}
+.process_wrap .process_video {
+    width: 1200px;
+    margin: 0 auto;
+}
+.process_wrap .process_video {}
+.process_wrap .process_video .b_frame {
+    width: 935px;
+    height: 500px;
+    float: left;
+    background-color: #e3ab80;
+}
+.process_video .s_frame {
+    float: left;
+    margin-left: 10px;
+}
+.process_video .s_frame ul {
+}
+.process_video .s_frame ul li {
+    width: 255px;
+    height: 160px;
+    background-color: #e3ab80;
+}
+.process_video .s_frame ul li a {
+    line-height: 160px;
+    text-align: center;
+    display: block;
+    color: white;
+}
+.process_video .s_frame ul li~li {
+    margin-top: 10px;
+}
+.process_wrap .process_btn {
+    color: #333;
+    float: right;
+    margin-right: 75px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
