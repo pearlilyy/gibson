@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gibson_index</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+
+    <script src="{{ url_for('static', filename='js/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-ui.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.rotate.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/header.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/footer.js') }}"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header_wrap clearfix">
+            <div class="logo_box">
+                <a href="#"><img src="{{ url_for('static', filename='imgs/logo/gibson_small.png') }}" alt="Gibson"></a>
+            </div>
+            <nav class="clearfix">
+                <ul class="main_menu">
+                    <li><a href="#">깁슨소개</a></li>
+                    <li><a href="#">제품구매</a></li>
+                    <li><a href="#">깁슨의 음악</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+                <ul class="user_menu">
+                    <li><a href="#"><img src="{{ url_for('static', filename='imgs/icons/user_white.png') }}"
+                                alt="Login"></a></li>
+                    <li><a href="#" class="magnifying"><img
+                                src="{{ url_for('static', filename='imgs/icons/magnifying_white.png') }}"
+                                alt="Search"></a></li>
+                    <li class="global">
+                        <a href="#"><img src="{{ url_for('static', filename='imgs/icons/global_white.png') }}"
+                                alt="Language"></a>
+                        <ul class="language">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="hamburger"><img
+                                src="{{ url_for('static', filename='imgs/icons/hamburger_white.png') }}" alt="Menu"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sub_menu">
+            <div class="sub_wrap clearfix">
+                <ul>
+                    <li><a href="sub_history.html">연혁</a></li>
+                    <li><a href="sub_feature.html">깁슨 기타의 특징</a></li>
+                    <li><a href="sub_maintaining.html">기타 관리 노하우</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">일렉트릭 기타</a></li>
+                    <li><a href="#">어쿠스틱 기타</a></li>
+                    <li><a href="#">부품</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">깁슨 뮤지션 스토리</a></li>
+                    <li><a href="sub_play.html">기타 배우기</a></li>
+                </ul>
+                <ul>
+                    <li><a href="sub_fix.html">수리/튜닝 신청</a></li>
+                    <li><a href="#">서비스센터/대리점 찾기</a></li>
+                    <li><a href="#">소식&amp;이벤트</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">악기 렌트하기</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+        <div class="main_wrap">
+            <div class="main_txt">
+                <h1>Only Gibson is<br>Good Enough</h1>
+                <p class="red">Since 1894.<br>The World Best Guitar Brand</p>
+                <p class="main_ex">세계 최고의 기타 브랜드 깁슨,<br>시간이 흘러도 변하지 않는<br>깁슨의 소리를 함께 즐겨보세요</p>
+            </div>
+            <div class="mouse">
+                <img src="{{ url_for('static', filename='imgs/icons/mouse_white.png') }}" alt="mouse">
+            </div>
+        </div>
+    </main>
+
+    <section class="guitars">
+        <div class="guitars_wrap">
+            <h2>당신의 기타는 무엇인가요?</h2>
+            <a href="#">더 많은 제품 둘러보기</a>
+            <div class="guitar_img clearfix">
+                <a href="#"><img src="{{ url_for('static', filename='imgs/main_guitars/guitar_1.png') }}" alt="Flying V"
+                        class="num1"></a>
+                <a href="#"><img src="{{ url_for('static', filename='imgs/main_guitars/guitar_2.png') }}" alt="SG"
+                        class="num2"></a>
+                <a href="#"><img src="{{ url_for('static', filename='imgs/main_guitars/guitar_3.png') }}" alt="Les Paul"
+                        class="guitar_on num3"></a>
+                <a href="#"><img src="{{ url_for('static', filename='imgs/main_guitars/guitar_4.png') }}" alt="ES"
+                        class="num4"></a>
+                <a href="#"><img src="{{ url_for('static', filename='imgs/main_guitars/guitar_5.png') }}" alt="Base"
+                        class="num5"></a>
+            </div>
+
+            <div class="guitar_txt">
+                <a href="#" id="prev"><img src="{{ url_for('static', filename='imgs/icons/prev.png') }}"
+                        alt="prev button">PREV</a>
+
+                <ul>
+                    <li class="num1"><span>플라잉 브이</span><br>대표적인 현대적 기타 디자인의 상징이 되었다.<br>록음악 전용으로 알려져 있으나, 원래
+                        블루스용으로<br>생산된 것으로 범용성이 뛰어나다.</li>
+                    <li class="num2"><span>SG</span><br>Solid Guitar의 약자로 마호가니의 넥이 연결되는 부분<br>위 아래를 모두 깎아놓은 더블컷 형태가
+                        특징인<br>깁슨의 대표 기타 중 하나이다.</li>
+                    <li class="txt_on num3"><span>레스폴</span><br>깁슨을 대표하는 일렉기타로<br>깁슨의 일렉트릭 기타를 사용하는 유명 아티스트들의<br>대부분이
+                        레스폴을 사용하고 있다.</li>
+                    <li class="num4"><span>ES</span><br>Electric Spanish의 약자로 스페인의 바디 울림통이 있는 기타가 전기로 사운드를 표현한다고 해서 붙여진
+                        것.<br>바이올린 스타일의 f 홀이 있는 것이 특징이다.</li>
+                    <li class="num5"><span>베이스 기타</span><br>독특한 디자인과 함께 강한 출력의 따뜻한 빈티지톤의<br>사운드를 지니고 있어 락 음악에 특히 강세를
+                        보인다.</li>
+                </ul>
+
+                <a href="#" id="next">NEXT<img src="{{ url_for('static', filename='imgs/icons/next.png') }}"
+                        alt="next button"></a>
+            </div>
+            <div class="btns">
+                <ul>
+                    <li class="num1">button1</li>
+                    <li class="num2">button2</li>
+                    <li class="btn_on num3">button3</li>
+                    <li class="num4">button4</li>
+                    <li class="num5">button5</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="musicians">
+        <div class="musicians_wrap">
+            <h2>위대한 음악가들의 깁슨 연주 엿보기</h2>
+            <div class="musicians_img">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#"><img src="{{ url_for('static', filename='imgs/eric_main.jpg') }}"
+                                alt="Eric Clapton"></a>
+                        <span class="musician_cover"></span>
+                        <strong>Eric Clapton</strong>
+                        <span class="musician_name">에릭 클랩튼</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{ url_for('static', filename='imgs/BBKing_main.jpg') }}"
+                                alt="BB King"></a>
+                        <span class="musician_cover"></span>
+                        <strong>BB King</strong>
+                        <span class="musician_name">비비킹</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{ url_for('static', filename='imgs/jimi_main.jpg') }}"
+                                alt="Jimi Handrix"></a>
+                        <span class="musician_cover"></span>
+                        <strong>Jimi Handrix</strong>
+                        <span class="musician_name">지미 핸드릭스</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{ url_for('static', filename='imgs/george_main.jpg') }}"
+                                alt="George Harrison"></a>
+                        <span class="musician_cover"></span>
+                        <strong>George Harrison</strong>
+                        <span class="musician_name">조지 해리슨</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="{{ url_for('static', filename='imgs/elvis_main.jpg') }}"
+                                alt="Elvis Presley"></a>
+                        <span class="musician_cover"></span>
+                        <strong>Elvis Presley</strong>
+                        <span class="musician_name">엘비스 프레슬리</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="musicians_btn">
+                <a href="#">연주 영상 보러가기</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="banner_wrap">
+            <div class="banner_txt">
+                <h2>Gibson's Premium Service</h2>
+                <h3>악기 렌트 서비스를 이용해 보세요!</h3>
+                <p>구매를 망설이고 있다면 깁슨의 프리미엄 서비스를 이용해 보세요.</p>
+                <a href="#">기타 렌트하러 가기 &gt;&gt;</a>
+            </div>
+            <div class="banner_img">
+                <a href="#"><img src="{{ url_for('static', filename='imgs/main_banner_guitar.png') }}"
+                        alt="rent guitars" class="rent_guitar"></a>
+                <img src="{{ url_for('static', filename='imgs/main_banner_notes.png') }}" alt="rent notes"
+                    class="rent_notes">
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="video_wrap">
+            <h2>깁슨이 만들어지는 과정</h2>
+            <p>미국 테네시 네슈빌에 위치한 Gibson 공장에서 기타가 만들어지는 모습입니다.</p>
+
+            <div class="video_inner">
+                <img src="{{ url_for('static', filename='imgs/main_video.jpg') }}" alt="how to make gibson guitars">
+                <span class="cover"></span>
+                <a href="#" class="play_btn"><img src="{{ url_for('static', filename='imgs/icons/play_btn.png') }}"
+                        alt="video play"></a>
+            </div>
+
+            <div class="video_txt">
+                <h4>Episode 1</h4>
+                <p class="video_title">Gibson 기타 바디 제작</p>
+                <p class="grey_txt">깁슨의 마스터 Luthier Jim DeCola(루터 짐 데콜라)에게 듣는 기타 바디의 제작 스토리</p>
+                <a href="https://www.youtube.com/watch?v=npOOEWaTadA&list=PL7qLGYJiRJ1iUMsYbI8Bze69xQhanONzn"
+                    class="video_btn">더 많은 영상 보러가기</a>
+            </div>
+        </div>
+    </section>
+    <div id="modal">
+        <div class="modal_wrap">
+            <iframe id="player" width="830" height="467"
+                src="https://www.youtube.com/embed/npOOEWaTadA?autohide=1&rel=0&showinfo=0&title=0&autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="xbtn">
+            <a href="#"><img src="{{ url_for('static', filename='imgs/icons/ltrb.png') }}" alt="video button"></a>
+            <a href="#"><img src="{{ url_for('static', filename='imgs/icons/lbrt.png') }}" alt="video button"></a>
+        </div>
+    </div>
+
+
+    <section class="subscribe">
+        <div class="subscribe_wrap clearfix">
+            <h2>NEWS &amp; OFFERS 구독하기</h2>
+            <form action="#">
+                <input type="email" name="emailaddress" placeholder="EMAIL ADDRESS" id="email">
+                <p>이메일을 제출함으로써, 당신은 이 사이트의 <span>정책 &amp; 개인정보 이용약관</span>에 동의하게 됩니다.</p>
+                <input type="submit" value="구독하기" id="subscribe">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="family_site">
+            <h4>VISIT THE GIBSON BRANDS FAMILY</h4>
+            <ul class="clearfix">
+                <li><a href="http://www.steinberger.com/"><img
+                            src="{{ url_for('static', filename='imgs/logo/Steinberger.jpg') }}" alt="Steinberger"></a>
+                </li>
+                <li class="krk"><a href="https://www.krkmusic.com/"><img
+                            src="{{ url_for('static', filename='imgs/logo/KRK.jpg') }}" alt="KRK"></a></li>
+                <li><a href="https://www.epiphone.com/"><img
+                            src="{{ url_for('static', filename='imgs/logo/Epiphone.jpg') }}" alt="Epiphone"></a></li>
+                <li><a href="https://www.kramerguitars.com/"><img
+                            src="{{ url_for('static', filename='imgs/logo/Kramer.jpg') }}" alt="Kramer"></a></li>
+                <li><a href="https://mesaboogie.com/"><img
+                            src="{{ url_for('static', filename='imgs/logo/MesaBoogie.jpg') }}" alt="Mesa Boogie"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="footer_menu clearfix">
+                <div class="footer_left">
+                    <ul>
+                        <li><a href="#">구매 가능 매장 찾기(온/오프라인)</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">서비스센터 찾기</a></li>
+                    </ul>
+
+                    <p>Copyright 2020 Gibson Brands, Inc. All rights reserved.</p>
+                </div>
+                <div class="footer_right">
+                    <div class="sns">
+                        <p>팔로우하기</p>
+                        <a href="https://www.instagram.com/gibsonguitar/" class="instagram">Instagram</a>
+                        <a href="https://www.facebook.com/Gibson/" class="facebook">Facebook</a>
+                        <a href="https://twitter.com/gibsonguitar" class="twitter"></a>
+                        <a href="https://www.linkedin.com/company/gibson-guitar" class="linkedin"></a>
+                        <a href="https://www.youtube.com/c/gibsonguitar" class="youtube"></a>
+                    </div>
+                    <div class="apps">
+                        <p>다운로드</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.zoundio.amped&hl=en_US&gl=US"
+                            class="google"></a>
+                        <a href="https://apps.apple.com/us/app/gibson/id1116032929" class="apple"></a>
+                    </div>
+
+                    <p>Customer Support(US &amp; Canada): <span>1-800-4</span></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
