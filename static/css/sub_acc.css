@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+body {
+    background: url(../imgs/gibson_purple.png) no-repeat 0 20%;
+}
+.inbody {
+    background: url(../imgs/gibson_beige.png) no-repeat 100% 90%;
+}
+
+
+/*main*/
+.main {
+    width: 1280px;
+    margin: 0 auto;
+}
+.main h1 {
+    padding: 150px 0 0 40px;
+    font-size: 30px;
+    background: url(../imgs/icons/guitar-pick.png) no-repeat 0 100%;
+}
+.main h2 {
+    padding: 10px 45px 40px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #888;
+    position: relative;
+    font-family: 'Charter','sans-serif';
+}
+
+/*guitar_menu*/
+.acc_menu {
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+    transition: all .6s;
+}
+.acc_menu ul {
+    float: right;
+    margin-right: 2%;
+}
+.acc_menu ul li {
+    float: left;
+    padding: 20px;
+}
+.acc_menu ul li:hover a {
+    text-decoration: underline;
+    font-weight: 500;
+}
+.acc_menu ul li.on {
+    font-size: 26px;
+    padding: 13px 30px;
+    font-weight: 600;
+}
+.acc_menu ul li.on a {
+    color: #daa150;
+}
+.acc_menu ul li.on:hover a {
+    text-decoration: none;
+    font-weight: 600;
+}
+.acc_menu ul li a {
+    color: #333;
+}
+
+
+
+/*guitar_list*/
+.acc_list {
+    width: 1200px;
+    margin: 100px auto 0;
+}
+.acc_list .acc_box {
+    width: 285px;
+    height: 400px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.acc_list .acc_box .acc_bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #eee;
+    position: absolute;
+    transition: all .3s;
+}
+.acc_box img {
+    padding: 20px 0;
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    left: center;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.acc_box:hover img {
+    transform: translate(-50%) rotate(10deg);
+}
+.acc_box p {
+    /*padding: 40px;*/
+    line-height: 1.5;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+    width: 285px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.straps, .cases, .stands, .capos, .picks, .care {
+    margin-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
+.straps .acc_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+.cases .acc_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+.stands .acc_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+.capos .acc_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+.picks .acc_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+.care .acc_box:nth-of-type(4n) {
+    margin-right: 0;
+}
