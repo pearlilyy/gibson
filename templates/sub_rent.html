@@ -3,13 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Gibson_feature</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Gibson Rent</title>
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="css/sub_header.css">
-    <link rel="stylesheet" href="css/sub_feature.css">
+    <link rel="stylesheet" href="css/sub_rent.css">
     <link rel="stylesheet" href="../css/footer.css">
 
     <script src="../js/jquery-1.12.4.min.js"></script>
@@ -17,11 +15,10 @@
     <script src="../js/header.js"></script>
     <script src="../js/jquery.rotate.js"></script>
     <script src="js/sub_main.js"></script>
-    <script src="js/sub_feature.js"></script>
+    <script src="js/sub_rent.js"></script>
 </head>
 
 <body>
-
     <header>
         <div class="header_wrap clearfix">
             <div class="logo_box">
@@ -87,70 +84,125 @@
     </header>
 
     <main>
-        <h1>깁슨 기타의 특징</h1>
-        <h2>The Feature of Gibson</h2>
+        <h1>악기 렌트하기</h1>
+        <h2>Guitar Rental</h2>
     </main>
 
-    <section class="feature_con">
-        <p>깁슨에서 만드는 대부분의 일렉트릭 기타는 처음 나왔을 때부터 현재까지 로즈우드 지판에 마호가니 바디라는 특징을 유지하며, 바이올린족이나 만돌린과 같은 고전적인 악기들처럼 곡선을 살린 디자인이 소리의 울림에 유리하다는 철학을 가지고 특유의 독특한 디자인을 내세우고 있습니다. 특히 레스폴이나 할로우바디 기타에서 잘 드러나며, 이런 디자인을 기타의 상판부분이 아치형을 이루고 있다 하여 아치탑이라고 부릅니다.<br><br>깁슨은 전통적인 악기 제작 방식에 가깝게 바디와 넥을 가공하여 접착시켜 만들기 때문에 대량 생산의 방법으로 만들어지지 않습니다. 하지만 깁슨 특유의 깊은 울림과 두꺼운 사운드는 이러한 제작방식에서만 나온다는 철학으로 이러한 방식을 고수하고 있습니다.<br><br>또한 깁슨 악기들에 주로 들어가는 탑(바디의 윗부분) 역시 아치탑을 사용하며, 이 방식 또한 공정이 복잡하지만, 깁슨의 소리 철학에 의해 지금도 계속 사용되고 있습니다.<br><br>이러한 깁슨의 소리에 대한 연구는 다른 많은 기타 업체에 큰 영향을 주어 왔습니다.</p>
+    <section class="flow">
+        <h3>현재 렌트 가능한 기타 목록</h3>
+        <div class="flowbox">
+            <ul class="clearfix">
+                <li>
+                    <a href="#"><img src="imgs/guitars/electric/1956_LesPaul.png" alt="Les Paul"></a>
+                    <a href="#" class="ibox">
+                        <p>Les Paul 1956<br><span>₩100,000</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/guitars/acoustic/50sJ-45Original.png" alt="50s J-450 Original"></a>
+                    <a href="#" class="ibox">
+                        <p>J-450 Original 50s<br><span>₩100,000</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/guitars/acoustic/j-45.png" alt="J-45"></a>
+                    <a href="#" class="ibox">
+                        <p>J-45<br><span>₩90,000</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/guitars/bass/SG_StandardBass.png" alt="SG Standard Bass"></a>
+                    <a href="#" class="ibox">
+                        <p>SG Standard Bass<br><span>₩100,000</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/guitars/electric/1959_ES-355Reissue.png" alt="ES-355"></a>
+                    <a href="#" class="ibox">
+                        <p>ES-335 Reissue 1959<br><span>₩150,000</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/guitars/electric/JimiHendrix1969_FlyingV.png" alt="Jimi Hendrix 1969 Flying V"></a>
+                    <a href="#" class="ibox">
+                        <p>Flying V Jimi Hendrix 1969<br><span>₩140,000</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/guitars/electric/1959_ES-355WatermelonRedLightAged.png" alt="1959 ES-355 Watermelon Red Light Aged"></a>
+                    <a href="#" class="ibox">
+                        <p>ES-335 Watermelon<br>Red Light Aged 1959<br><span>₩170,000</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="imgs/guitars/electric/1968_LesPaulCustomReissue.png" alt="1968 Les Paul Custom Reissue"></a>
+                    <a href="#" class="ibox">
+                        <p>Les Paul Custom Reissue 1968<br><span>₩100,000</span></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flow_btn clearfix">
+            <p>
+                <span>ON</span>
+                <span>OFF</span>
+            </p>
+            <a href="#"></a>
+        </div>
+        <p>*기재되어있는 금액은 14일 기준입니다. 기간별 가격은 상세 페이지에 기재되어 있습니다.</p>
     </section>
-
-    <section class="process">
-        <div class="process_wrap">
-            <div class="process_txt">
-                <h3>깁슨의 제작 과정</h3>
-                <p>The Process</p>
-            </div>
-            <div class="process_video clearfix">
-                <div class="b_frame">
-                    <iframe src="https://www.youtube.com/embed/lxwLEiVnGDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <section class="rent_form">
+        <div class="rent_inner">
+            <form action="#">
+                <h4>기타 렌트 신청서 작성</h4>
+                <div class="rent_li li_fst">
+                    <p>이름</p>
+                    <input type="text">
                 </div>
-                <div class="s_frame">
+                <div class="rent_li">
+                    <p>연락처</p>
+                    <input type="tel">
+                </div>
+                <div class="rent_li">
+                    <p>이메일 주소</p>
+                    <input type="email">
+                </div>
+                <div class="rent_li">
+                    <p>깁슨 홈페이지 아이디</p>
+                    <input type="text">
+                </div>
+                <div class="rent_li">
+                    <p>렌트 신청 기타명</p>
+                    <select name="guitarName" id="">
+                        <option value="기타명 선택">기타명 선택</option>
+                            <option value="LesPaul1956">Les Paul 1956</option>
+                            <option value="Les Paul Custom Reissue 1968">Les Paul Custom Reissue 1968</option>
+                            <option value="SG Standard Bass">SG Standard Bass</option>
+                            <option value="ES-335 Reissue 1959">ES-335 Reissue 1959</option>
+                            <option value="ES-335 Watermelon">ES-335 Watermelon</option>
+                            <option value="Flying V Jimi Hendrix 1969">Flying V Jimi Hendrix 1969</option>
+                            <option value="J-45">J-45</option>
+                            <option value="J-450 Original 50s">J-450 Original 50s</option>
+                    </select>
+                </div>
+                <div class="rent_li rent_per">
+                    <p>신청 기간</p>
                     <ul>
-                        <li>
-                            <a href="#">Episode 1
-                               <!--<img src="imgs/ep1.jpg" alt="">-->
-                                <span><iframe src="https://www.youtube.com/embed/npOOEWaTadA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Episode 2
-                                <span><iframe src="https://www.youtube.com/embed/lxwLEiVnGDk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Episode 3
-                                <span><iframe src="https://www.youtube.com/embed/lhS2gGCeDyo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Episode 4
-                                <span><iframe src="https://www.youtube.com/embed/d05le5SY2X8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Episode 5
-                                <span><iframe src="https://www.youtube.com/embed/KnMSUu-frLM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Episode 6
-                                <span><iframe src="https://www.youtube.com/embed/K5RzXCNnBvk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-                            </a>
-                        </li>
+                        <li><span>렌트 시작일</span><input type="date"><span>*저녁 6시 이후 픽업시 시작일 당일은 금액에 포함되지 않습니다.</span></li>
+                        <li><span>렌트 종료일</span><input type="date"><span>*렌트 종료일 자정까지 이용 가능하며 당일 선반납시 할인되는 금액은 없습니다.</span></li>
                     </ul>
                 </div>
-                <div class="dbar">
-                    <img id="bar" src="imgs/icons/drag_bar.png" alt="drag bar">
+                <div class="rent_li rent_date">
+                    <p>신청일</p>
+                    <input type="datetime" hidden>
                 </div>
-            </div>
-            <a href="https://www.youtube.com/user/GibsonGuitarCorp" class="process_btn">깁슨 유튜브 팔로우하러 가기
-            <img src="imgs/icons/more_r.png" alt="깁슨 유튜브 페이지로 이동">
-            <span>click</span>
-            </a>
+                
+                <input type="submit" class="rent_submit" value="렌트 신청하기">
+            </form>
         </div>
     </section>
-
+    
     <footer>
         <div class="family_site">
             <h4>VISIT THE GIBSON BRANDS FAMILY</h4>
@@ -195,7 +247,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 </body>
 

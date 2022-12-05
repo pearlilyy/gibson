@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gibson Login</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+
+<body>
+
+    <section class="join_wrap">
+        <div class="inner_join">
+            <img src="imgs/login_user.png" alt="Gibson Family">
+            <h2>회원가입</h2>
+
+            <form action="#" name="joinfrm" method="post">
+                <fieldset class="required">
+                   <legend>필수사항 입력</legend>
+                    <table>
+                        <tr>
+                            <th>아이디*</th>
+                            <td>
+                                <input type="text" name="userid" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호*</th>
+                            <td>
+                                <input type="password" name="userpw" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이름*</th>
+                            <td><input type="text" name="username" required></td>
+                        </tr>
+                        <tr>
+                            <th>핸드폰 번호*</th>
+                            <td><input type="tel" name="usertel" required></td>
+                        </tr>
+                        <tr>
+                            <th>이메일*</th>
+                            <td><input type="email" name="useremail"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset class="optional">
+                    <legend>선택사항 입력</legend>
+                    
+                    <table>
+                        <tr>
+                            <th>사용하는 기타</th>
+                            <td>
+                                <select name="guitar" id="">
+                                    <option value="guitar-type">기타 종류</option>
+                                    <option value="electric">일렉트릭 기타</option>
+                                    <option value="acoustic">어쿠스틱 기타</option>
+                                    <option value="bass">베이스 기타</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>지역</th>
+                            <td>
+                                <input type="text" name="city">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>가입일</th>
+                            <td>
+                                <input type="date" name="date" hidden>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                
+                <input type="submit" value="가입하기" class="joinbtn">
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

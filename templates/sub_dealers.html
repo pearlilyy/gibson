@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gibson Dealers</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="css/sub_header.css">
+    <link rel="stylesheet" href="css/sub_dealers.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/jquery.rotate.js"></script>
+    <script src="js/sub_main.js"></script>
+    <script src="js/sub_dealers.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap clearfix">
+            <div class="logo_box">
+                <a href="../index.html"><img src="../imgs/logo/gibson_small.png" alt="Gibson"></a>
+            </div>
+
+            <nav class="clearfix">
+                <ul class="main_menu clearfix">
+                    <li>
+                        <a href="#">깁슨소개<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_history.html">연혁<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_feature.html">깁슨 기타의 특징<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_maintaining.html">기타 관리 노하우<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">제품구매<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_electric.html">일렉트릭 기타<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_acoustic.html">어쿠스틱 기타<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_acc.html">부품<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">깁슨의 음악<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_musicians.html">깁슨 뮤지션 스토리<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_play.html">기타 배우기<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객지원<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_fix.html">수리/튜닝 신청<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_dealers.html">서비스센터/대리점 찾기<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_news.html">소식&amp;이벤트<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_FAQ.html">FAQ<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_rent.html">악기 렌트하기<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="user_menu">
+                <li><a href="#"><img src="../imgs/icons/user_white.png" alt="Login"></a></li>
+                <li><a href="#" class="magnifying"><img src="../imgs/icons/magnifying_white.png" alt="Search"></a></li>
+                <li class="global">
+                    <a href="#"><img src="../imgs/icons/global_white.png" alt="Language"></a>
+                    <ul class="language">
+                        <li><a href="#">한국어</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <h1>서비스센터/대리점 찾기</h1>
+        <h2>Find the Dealers</h2>
+    </main>
+
+    <section class="dealers">
+        <div class="dealers_wrap">
+            <h3>대리점 찾기</h3>
+            <table>
+                <tr>
+                    <th width="280px" height="60px;">대리점명</th>
+                    <th width="520px">주소</th>
+                    <th width="200px">전화번호</th>
+                    <th width="200px">약도</th>
+                </tr>
+                <tr>
+                    <td>대구 직매장</td>
+                    <td>대구광역시 수성구 명덕로 391</td>
+                    <td>053-583-8866</td>
+                    <td><button id="btn0">지도보기</button></td>
+                </tr>
+                <tr>
+                    <td>잭기타 갤러리</td>
+                    <td>121-160 서울 마포구 상수동 146-9</td>
+                    <td>02-323-1155</td>
+                    <td><button id="btn1">지도보기</button></td>
+                </tr>
+                <tr>
+                    <td>뮤직센터 (천안)</td>
+                    <td>330-942 충남 천안시 신부동 370-18</td>
+                    <td>041-523-1216</td>
+                    <td><button id="btn2">지도보기</button></td>
+                </tr>
+                <tr>
+                    <td>버즈비</td>
+                    <td>121-200 서울 마포구 동교동 183-5호 지하1층</td>
+                    <td>02-337-7067</td>
+                    <td><button id="btn3">지도보기</button></td>
+                </tr>
+                <tr>
+                    <td>뮤직포스</td>
+                    <td>135-100 서울 강남구 청담동 123-45 M-빌딩</td>
+                    <td>02-3474-5150</td>
+                    <td><button id="btn4">지도보기</button></td>
+                </tr>
+                <tr>
+                    <td>(주)프리버드</td>
+                    <td>120-180 서울 서대문구 창천동 503-12 왕인빌딩 3층</td>
+                    <td>070-7826-1610</td>
+                    <td><button id="btn5">지도보기</button></td>
+                </tr>
+                <tr>
+                    <td>기타몰 (국제미디)</td>
+                    <td>110-320 서울 종로구 낙원동 284-6 (낙원상가3층 343호)</td>
+                    <td>02-743-9654</td>
+                    <td><button id="btn6">지도보기</button></td>
+                </tr>
+                <tr>
+                    <td>삼광악기</td>
+                    <td>614-040 부산 부산진구 전포동 876-7 부전 지하철역 삼광악기사</td>
+                    <td>051-632-3003</td>
+                    <td><button id="btn7">지도보기</button></td>
+                </tr>
+            </table>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.765448591182!2d128.6106539152515!3d35.854754480154156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e24aedaa5277%3A0xeec1e6cc67cd355d!2z64yA6rWs6rSR7Jet7IucIOyImOyEseq1rCDsiJjshLEx6rCA64-ZIOuqheuNleuhnCAzOTE!5e0!3m2!1sko!2skr!4v1630486879697!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.290942876709!2d126.9206127152995!3d37.548208579801276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98cfc3c17863%3A0x5e3465af92f9b99f!2z7J6t7JmA7J2865Oc6riw7YOA6rCk65-s66as!5e0!3m2!1sko!2skr!4v1630487145328!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.047616315886!2d127.14923421527854!3d36.81737887994511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b28434afc3757%3A0xad61a6a7c886e2e1!2z666k7KeB7IS87YSwKOq1rCDsnKDspojrk5zquLDtg4Ap!5e0!3m2!1sko!2skr!4v1630487281782!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9485823307964!2d126.92891631529965!3d37.556275179799776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98ea984c9a87%3A0x97e074ed85673443!2sbuzzbee!5e0!3m2!1sko!2skr!4v1630994061464!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.544076857032!2d127.03651351529784!3d37.49508397981132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca47a55555555%3A0xf145d293264189c1!2zKOyjvCnrrqTsp4Htj6zsiqTquIDroZzrsozrhKTtirjsm43siqQ!5e0!3m2!1sko!2skr!4v1630994113926!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50626.632510326825!2d126.94428048017375!3d37.52761862997913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98ea4517987f%3A0xb89a8698a53f01d0!2z7ZSE66as67KE65Oc666k7KeBIOyLoOy0jOygkA!5e0!3m2!1sko!2skr!4v1630994185494!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.2510621531255!2d126.98587821530002!3d37.57270537979666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2dd6709f6a1%3A0x5ca729d9a7dc4fbd!2z6rWt7KCc66-465SU!5e0!3m2!1sko!2skr!4v1630487455335!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.443547602748!2d129.05681841523216!3d35.14555738032266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb67a275c951%3A0x934385f12980fb5e!2z7IK86rSR7JWF6riw7IKs!5e0!3m2!1sko!2skr!4v1630994810984!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="online">
+        <h3>공식 온라인 판매처</h3>
+
+        <div class="Korea clearfix">
+            <h4>한국</h4>
+
+            <div class="kdealer">
+                <a href="https://www.ajunews.com/view/20110817000006">
+                    <img src="imgs/logo/samic_logo.png" alt="Samick">
+                    <p>삼익악기</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="USA clearfix">
+            <h4>The USA</h4>
+
+            <div class="adealer">
+                <a href="https://www.altomusic.com/">
+                    <img src="imgs/logo/Alto_music_logo.png" alt="Alto Music">
+                    <p>Alto Music</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.americanmusical.com/">
+                    <img src="imgs/logo/American_Musical_Supply.png" alt="American Musical Supply">
+                    <p>American Musical Supply</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.chicagomusicexchange.com/">
+                    <img src="imgs/logo/Chicago_Music_Exchange.png" alt="Chicago Music Exchange">
+                    <p>Chicago Music Exchange</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://chucklevins.com/">
+                    <img src="imgs/logo/Chuck_Levin's_Washington_Music_Center.png" alt="Chuck Levin's Washington Music">
+                    <p>Chuck Levin's Washington Music</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://cosmomusic.ca/">
+                    <img src="imgs/logo/Cosmo_Music.png" alt="Cosmo Music">
+                    <p>Cosmo Music</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://davesguitar.com/">
+                    <img src="imgs/logo/Dave's_Guitar_Shop.png" alt="Dave's Guitar Shop">
+                    <p>Dave's Guitar Shop</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.guitarcenter.com/">
+                    <img src="imgs/logo/Guitar_Center.png" alt="Guitar Center">
+                    <p>Guitar Center</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.long-mcquade.com/">
+                    <img src="imgs/logo/Long&McQuade.png" alt="Long & McQuade">
+                    <p>Long &amp; McQuade</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://manchestermusicmill.com/">
+                    <img src="imgs/logo/Manchester_Music_Mill.png" alt="Manchester Music Mill">
+                    <p>Manchester Music Mill</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.musiciansfriend.com/gibson">
+                    <img src="imgs/logo/Musician's_Friend.png" alt="Musician's Friend">
+                    <p>Musician's Friend</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.rainbowguitars.com/Gibson?page=1&max=4">
+                    <img src="imgs/logo/Rainbow_Guitars.png" alt="Rainbow Guitars">
+                    <p>Rainbow Guitars</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.russomusic.com/">
+                    <img src="imgs/logo/Russo_Music.png" alt="Russo Music">
+                    <p>Russo Music</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.samash.com/">
+                    <img src="imgs/logo/Sam_Ash.png" alt="Sam Ash">
+                    <p>Sam Ash</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.sweetwater.com/">
+                    <img src="imgs/logo/Sweetwater.png" alt="Sweetwater">
+                    <p>Sweetwater</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.themusiczoo.com/">
+                    <img src="imgs/logo/The_Music_Zoo.png" alt="The Music Zoo">
+                    <p>The Music Zoo</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.toneshopguitars.com/">
+                    <img src="imgs/logo/Tone_Shop_Guitars.png" alt="Tone Shop Guitars">
+                    <p>Tone Shop Guitars</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://waltgracevintage.com/">
+                    <img src="imgs/logo/Walt_Grace_Vintage.png" alt="Walt Grace Vintage">
+                    <p>Walt Grace Vintage</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://wildwoodguitars.com/">
+                    <img src="imgs/logo/Wildwood_Guitars.png" alt="Wildwood Guitars">
+                    <p>Wildwood Guitars</p>
+                </a>
+            </div>
+            <div class="adealer">
+                <a href="https://www.zzounds.com/">
+                    <img src="imgs/logo/zZounds.png" alt="zZounds">
+                    <p>zZounds</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="family_site">
+            <h4>VISIT THE GIBSON BRANDS FAMILY</h4>
+            <ul class="clearfix">
+                <li><a href="http://www.steinberger.com/"><img src="../imgs/logo/Steinberger.jpg" alt="Steinberger"></a></li>
+                <li class="krk"><a href="https://www.krkmusic.com/"><img src="../imgs/logo/KRK.jpg" alt="KRK"></a></li>
+                <li><a href="https://www.epiphone.com/"><img src="../imgs/logo/Epiphone.jpg" alt="Epiphone"></a></li>
+                <li><a href="https://www.kramerguitars.com/"><img src="../imgs/logo/Kramer.jpg" alt="Kramer"></a></li>
+                <li><a href="https://mesaboogie.com/"><img src="../imgs/logo/MesaBoogie.jpg" alt="Mesa Boogie"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="footer_menu clearfix">
+                <div class="footer_left">
+                    <ul>
+                        <li><a href="#">구매 가능 매장 찾기(온/오프라인)</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">서비스센터 찾기</a></li>
+                    </ul>
+
+                    <p>Copyright 2020 Gibson Brands, Inc. All rights reserved.</p>
+                </div>
+                <div class="footer_right">
+                    <div class="sns">
+                        <p>팔로우하기</p>
+                        <a href="https://www.instagram.com/gibsonguitar/" class="instagram">Instagram</a>
+                        <a href="https://www.facebook.com/Gibson/" class="facebook">Facebook</a>
+                        <a href="https://twitter.com/gibsonguitar" class="twitter">Twitter</a>
+                        <a href="https://www.linkedin.com/company/gibson-guitar" class="linkedin">Linkedin</a>
+                        <a href="https://www.youtube.com/c/gibsonguitar" class="youtube">Youtube</a>
+                    </div>
+                    <div class="apps">
+                        <p>다운로드</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.zoundio.amped&hl=en_US&gl=US" class="google">Google Play Store</a>
+                        <a href="https://apps.apple.com/us/app/gibson/id1116032929" class="apple">App Store</a>
+                    </div>
+
+                    <p>Customer Support(US &amp; Canada): <span>1-800-4</span></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -5,69 +5,83 @@
     <meta charset="utf-8">
     <title>Gibson_history</title>
 
-    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="css/sub_header.css">
     <link rel="stylesheet" href="css/sub_history.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/jquery.rotate.js"></script>
-    <script src="js/history.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/jquery.rotate.js"></script>
+    <script src="js/sub_main.js"></script>
+    <script src="js/sub_history.js"></script>
 </head>
 
 <body>
     <header>
         <div class="header_wrap clearfix">
             <div class="logo_box">
-                <a href="#"><img src="imgs/logo/gibson_small.png" alt="Gibson"></a>
+                <a href="../index.html"><img src="../imgs/logo/gibson_small.png" alt="Gibson"></a>
             </div>
+
             <nav class="clearfix">
-                <ul class="main_menu">
-                    <li><a href="#">깁슨소개</a></li>
-                    <li><a href="#">제품구매</a></li>
-                    <li><a href="#">깁슨의 음악</a></li>
-                    <li><a href="#">고객지원</a></li>
-                </ul>
-                <ul class="user_menu">
-                    <li><a href="#"><img src="imgs/icons/user_white.png" alt="Login"></a></li>
-                    <li><a href="#" class="magnifying"><img src="imgs/icons/magnifying_white.png" alt="Search"></a></li>
-                    <li class="global">
-                        <a href="#"><img src="imgs/icons/global_white.png" alt="Language"></a>
-                        <ul class="language">
-                            <li><a href="#">한국어</a></li>
-                            <li><a href="#">English</a></li>
+                <ul class="main_menu clearfix">
+                    <li>
+                        <a href="#">깁슨소개<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_history.html">연혁<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_feature.html">깁슨 기타의 특징<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_maintaining.html">기타 관리 노하우<img src="../imgs/icons/more_icon.png" alt=""></a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hamburger"><img src="imgs/icons/hamburger_white.png" alt="Menu"></a></li>
+                    <li>
+                        <a href="#">제품구매<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_electric.html">일렉트릭 기타<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_acoustic.html">어쿠스틱 기타<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_acc.html">부품<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">깁슨의 음악<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_musicians.html">깁슨 뮤지션 스토리<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_play.html">기타 배우기<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객지원<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_fix.html">수리/튜닝 신청<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_dealers.html">서비스센터/대리점 찾기<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_news.html">소식&amp;이벤트<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_FAQ.html">FAQ<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_rent.html">악기 렌트하기<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-        </div>
-        <div class="sub_menu">
-            <div class="sub_wrap clearfix">
-                <ul>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">깁슨 기타의 특징</a></li>
-                    <li><a href="#">기타 관리 노하우</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">일렉트릭 기타</a></li>
-                    <li><a href="#">어쿠스틱 기타</a></li>
-                    <li><a href="#">부품</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">깁슨 뮤지션 스토리</a></li>
-                    <li><a href="#">기타 배우기</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">수리/튜닝 신청</a></li>
-                    <li><a href="#">서비스센터/대리점 찾기</a></li>
-                    <li><a href="#">소식&amp;이벤트</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">악기 렌트하기</a></li>
-                </ul>
-            </div>
+
+            <ul class="user_menu">
+                <li><a href="#"><img src="../imgs/icons/user_white.png" alt="Login"></a></li>
+                <li><a href="#" class="magnifying"><img src="../imgs/icons/magnifying_white.png" alt="Search"></a></li>
+                <li class="global">
+                    <a href="#"><img src="../imgs/icons/global_white.png" alt="Language"></a>
+                    <ul class="language">
+                        <li><a href="#">한국어</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a></li>
+            </ul>
+
         </div>
     </header>
 
@@ -77,11 +91,11 @@
     </main>
 
     <section class="history clearfix">
-       <h3>깁슨은 창립 이래 세계 최고의 기타 브랜드로 명성을 떨치고 있습니다.<br>차별화된 소리를 연구하는 깁슨의 발자취를 둘러보세요.</h3>
-       
-       <div id="drag">
-           <img src="imgs/icons/history_drag.png" alt="drag_bar" id="bar">
-       </div>
+        <h3>깁슨은 창립 이래 세계 최고의 기타 브랜드로 명성을 떨치고 있습니다.<br>차별화된 소리를 연구하는 깁슨의 발자취를 둘러보세요.</h3>
+
+        <div id="drag">
+            <img src="imgs/icons/history_drag.png" alt="drag_bar" id="bar">
+        </div>
         <div class="year year1">
             <div class="left">
                 <img src="imgs/Orville_gibson.jpg" alt="Orville Gibson">
@@ -90,7 +104,7 @@
             <div class="right">
                 <h4>1856</h4>
                 <p>Orville Gibson의 탄생</p>
-                
+
                 <h4>1898</h4>
                 <p>1898년 디자인 특허 출원</p>
             </div>
@@ -99,20 +113,20 @@
             <div class="left">
                 <h4>1902</h4>
                 <p>깁슨의 시초인 Gibson Mandolin-Guitar Mfg. Co, Ltd. 설립</p>
-                
+
                 <h4>1919</h4>
                 <p>1918년 오빌 깁슨은 세상을 떠나고, 깁슨사는 악기 디자이너 Lloyd Loar 고용</p>
             </div>
             <div class="right">
                 <img src="imgs/Lloyd_Loar.jpg" alt="Lloyd Loar">
-                <p><span>Lloyd Allayre Loar (1886.01.09-1943.09.14)</span>미국의 음악가, 악기 디자이너 및 사운드 엔지니어였던 그는 F-5 모델 만돌린과 L-5 기타 등의 디자인 작업으로 가장 잘 알려져 있음.  Bill Monroe에 의해 유명해진 그가 디자인한 만돌린은 현재 200,000달러를 호가함 </p>
+                <p><span>Lloyd Allayre Loar (1886.01.09-1943.09.14)</span>미국의 음악가, 악기 디자이너 및 사운드 엔지니어였던 그는 F-5 모델 만돌린과 L-5 기타 등의 디자인 작업으로 가장 잘 알려져 있음. Bill Monroe에 의해 유명해진 그가 디자인한 만돌린은 현재 200,000달러를 호가함 </p>
             </div>
         </div>
         <div class="year year3">
             <div class="left">
                 <img src="imgs/mandolin.jpg" alt="Mandolins">
                 <p><span>Gibson F-5 Mandolin</span> <span>Gibson L-5 어쿠스틱</span><br>깁슨의 F-5 만돌린은 이후 미국 만돌린의 표준이 됨. L-5 어쿠스틱 기타는 "컨트리 음악의 전체 역사에서 가장 중요한 싱글 기타"라고 불리고 있음
-</p>
+                </p>
             </div>
             <div class="right">
                 <h4>1922</h4>
@@ -147,7 +161,7 @@
             <div class="right">
                 <img src="imgs/ES-175.jpg" alt="ES-175">
                 <p><span>ES-175</span>ES-175는 풀사이즈 할로우바디 기타의 기준점 중 하나가 되었고 많은 재즈 기타리스트들이 깁슨의 악기를 선택하는 계기가 됨
-</p>
+                </p>
             </div>
         </div>
         <div class="year year7">
@@ -180,7 +194,7 @@
                 <p>당시 유행하던 더블컷 디자인을 적용시킨 전설적인 모델 ES-355를 발표하여 많은 퓨전/록 음악 기타리스트들에게 사랑받는 악기로 자리잡음</p>
             </div>
         </div>
-        
+
         <div class="now">
             <h4>현재</h4>
         </div>
@@ -190,11 +204,11 @@
         <div class="family_site">
             <h4>VISIT THE GIBSON BRANDS FAMILY</h4>
             <ul class="clearfix">
-                <li><a href="http://www.steinberger.com/"><img src="imgs/logo/Steinberger.jpg" alt="Steinberger"></a></li>
-                <li class="krk"><a href="https://www.krkmusic.com/"><img src="imgs/logo/KRK.jpg" alt="KRK"></a></li>
-                <li><a href="https://www.epiphone.com/"><img src="imgs/logo/Epiphone.jpg" alt="Epiphone"></a></li>
-                <li><a href="https://www.kramerguitars.com/"><img src="imgs/logo/Kramer.jpg" alt="Kramer"></a></li>
-                <li><a href="https://mesaboogie.com/"><img src="imgs/logo/MesaBoogie.jpg" alt="Mesa Boogie"></a></li>
+                <li><a href="http://www.steinberger.com/"><img src="../imgs/logo/Steinberger.jpg" alt="Steinberger"></a></li>
+                <li class="krk"><a href="https://www.krkmusic.com/"><img src="../imgs/logo/KRK.jpg" alt="KRK"></a></li>
+                <li><a href="https://www.epiphone.com/"><img src="../imgs/logo/Epiphone.jpg" alt="Epiphone"></a></li>
+                <li><a href="https://www.kramerguitars.com/"><img src="../imgs/logo/Kramer.jpg" alt="Kramer"></a></li>
+                <li><a href="https://mesaboogie.com/"><img src="../imgs/logo/MesaBoogie.jpg" alt="Mesa Boogie"></a></li>
             </ul>
         </div>
 

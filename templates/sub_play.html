@@ -5,68 +5,81 @@
     <meta charset="utf-8">
     <title>Gibson_play</title>
 
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="css/sub_header.css">
     <link rel="stylesheet" href="css/sub_play.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/jquery.rotate.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/jquery.rotate.js"></script>
+    <script src="js/sub_main.js"></script>
+    <script src="js/sub_play.js"></script>
 </head>
 
 <body>
     <header>
         <div class="header_wrap clearfix">
             <div class="logo_box">
-                <a href="#"><img src="imgs/logo/gibson_small.png" alt="Gibson"></a>
+                <a href="../index.html"><img src="../imgs/logo/gibson_small.png" alt="Gibson"></a>
             </div>
+
             <nav class="clearfix">
-                <ul class="main_menu">
-                    <li><a href="#">깁슨소개</a></li>
-                    <li><a href="#">제품구매</a></li>
-                    <li><a href="#">깁슨의 음악</a></li>
-                    <li><a href="#">고객지원</a></li>
-                </ul>
-                <ul class="user_menu">
-                    <li><a href="#"><img src="imgs/icons/user_white.png" alt="Login"></a></li>
-                    <li><a href="#" class="magnifying"><img src="imgs/icons/magnifying_white.png" alt="Search"></a></li>
-                    <li class="global">
-                        <a href="#"><img src="imgs/icons/global_white.png" alt="Language"></a>
-                        <ul class="language">
-                            <li><a href="#">한국어</a></li>
-                            <li><a href="#">English</a></li>
+                <ul class="main_menu clearfix">
+                    <li>
+                        <a href="#">깁슨소개<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_history.html">연혁<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_feature.html">깁슨 기타의 특징<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_maintaining.html">기타 관리 노하우<img src="../imgs/icons/more_icon.png" alt=""></a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hamburger"><img src="imgs/icons/hamburger_white.png" alt="Menu"></a></li>
+                    <li>
+                        <a href="#">제품구매<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_electric.html">일렉트릭 기타<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_acoustic.html">어쿠스틱 기타<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_acc.html">부품<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">깁슨의 음악<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_musicians.html">깁슨 뮤지션 스토리<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_play.html">기타 배우기<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객지원<span class="menu_bar"></span></a>
+                        <ul class="sub_menu">
+                            <li><a href="sub_fix.html">수리/튜닝 신청<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_dealers.html">서비스센터/대리점 찾기<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_news.html">소식&amp;이벤트<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_FAQ.html">FAQ<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                            <li><a href="sub_rent.html">악기 렌트하기<img src="../imgs/icons/more_icon.png" alt=""></a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-        </div>
-        <div class="sub_menu">
-            <div class="sub_wrap clearfix">
-                <ul>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">깁슨 기타의 특징</a></li>
-                    <li><a href="#">기타 관리 노하우</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">일렉트릭 기타</a></li>
-                    <li><a href="#">어쿠스틱 기타</a></li>
-                    <li><a href="#">부품</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">깁슨 뮤지션 스토리</a></li>
-                    <li><a href="#">기타 배우기</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">수리/튜닝 신청</a></li>
-                    <li><a href="#">서비스센터/대리점 찾기</a></li>
-                    <li><a href="#">소식&amp;이벤트</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">악기 렌트하기</a></li>
-                </ul>
-            </div>
+
+            <ul class="user_menu">
+                <li><a href="#"><img src="../imgs/icons/user_white.png" alt="Login"></a></li>
+                <li><a href="#" class="magnifying"><img src="../imgs/icons/magnifying_white.png" alt="Search"></a></li>
+                <li class="global">
+                    <a href="#"><img src="../imgs/icons/global_white.png" alt="Language"></a>
+                    <ul class="language">
+                        <li><a href="#">한국어</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a></li>
+            </ul>
+
         </div>
     </header>
 
@@ -87,29 +100,30 @@
 
     <section class="pose">
         <h3>기타 연주의 기초-자세</h3>
-        <div class="posture">
+        <div class="posture clearfix">
             <div class="left">
                 <img src="imgs/posture.jpg" alt="posture">
             </div>
 
-            <div class="left">
+            <div class="right">
                 <h4>01 연주 기본 자세<br>·<br>·</h4>
             </div>
         </div>
-        <div class="left_hand">
+        <div class="left_hand clearfix">
             <div class="left">
                 <h4>왼손의 손가락 위치 02<br>·<br>·</h4>
-                <img src="imgs/classic_form.jpg" alt="classic finger form">
-                <p>클래식, 재즈스타일<br>손가락을 핑거 보드에 수직으로 놓는 스타일로 보통 클래식, 재즈 등에 쓰입니다. 엄지손가락의 위치는 네크 뒤쪽의 한 가운데에서 자기 앞의 사이에서 움직입니다. 손가락은 눕히지 말고 핑거 보드와 수직이 되도록 손가락 바닥 중심 부분으로 줄을 누릅니다.</p>
             </div>
+
             <div class="right">
+                <img src="imgs/classic_form.jpg" alt="classic finger form">
+                <p><strong>클래식, 재즈스타일</strong><br>손가락을 핑거 보드에 수직으로 놓는 스타일로 보통 클래식, 재즈 등에 쓰입니다. 엄지손가락의 위치는 네크 뒤쪽의 한 가운데에서 자기 앞의 사이에서 움직입니다. 손가락은 눕히지 말고 핑거 보드와 수직이 되도록 손가락 바닥 중심 부분으로 줄을 누릅니다.</p>
                 <img src="imgs/rock_form.jpg" alt="rock finger form">
-                <p>록 스타일<br>손가락이 전반적으로 뉘게 놓습니다. 엄지손가락은 핑거 보드에 걸치는 느낌이고 손바닥을 네트에 대는 스타일입니다.이 폼을 우리는 록스타일이라고 부릅니다.</p>
+                <p><strong>록 스타일</strong><br>손가락이 전반적으로 뉘게 놓습니다. 엄지손가락은 핑거 보드에 걸치는 느낌이고 손바닥을 네트에 대는 스타일입니다.이 폼을 우리는 록스타일이라고 부릅니다.</p>
             </div>
         </div>
-        <div class="right_hand">
+        <div class="right_hand clearfix">
             <div class="left">
-                <img src="imgs/pick.bmp" alt="grap a pick">
+                <img src="imgs/pick.png" alt="grap a pick">
                 <p>팔꿈치의 각도는 기타,스트랩의 위치에 따라서 다르지만 90도 정도가 가장 일반적입니다. 팔굼치는 몸통에 붙이고 팔, 손 바닥은 기타에서 뗍니다. 새끼 손가락, 약손가락은 피크 가드에 붙여서 가볍게 떠받쳐도 됩니다. 손 바닥에 무게를 실어 얹으면 절대 안 됩니다. 연주도중에 가볍게 올려놓는 것은 상관없지만 보편적으로는 올려놓지 않는 편이 좋습니다. 손 바닥을 올려놓음으로써 손의 피킹행동법위가 좁아 지게 되어 빠른피킹을 할 수가 없기 때문입니다.</p>
             </div>
 
@@ -121,7 +135,7 @@
 
     <section class="stroke">
         <h3>기타 연주의 기초-스트로크</h3>
-        <div>
+        <div class="stroke_inner clearfix">
             <div class="left">
                 <h4>스트로크 방법 04<br>·<br>·</h4>
                 <img src="imgs/downstroke.jpg" alt="down stroke">
@@ -138,25 +152,25 @@
     </section>
 
     <section class="stroke_type">
-        <div class="calypso">
+        <div class="calypso clearfix">
             <div class="left">
                 <img src="imgs/stroke_calypso.jpg" alt="calypso">
-                <p>아무 곡에나 붙여도 잘 어울리는 주법<br>중간에 회색 화살표는 공피킹(헛스트로크) 입니다.</p>
+                <p><strong>아무 곡에나 붙여도 잘 어울리는 주법</strong><br>중간에 회색 화살표는 공피킹(헛스트로크) 입니다.</p>
             </div>
             <div class="right">
                 <h4>칼립소 스트로크</h4>
             </div>
         </div>
-        <div class="gogo">
+        <div class="gogo clearfix">
             <div class="left">
                 <h4>고고 스트로크</h4>
             </div>
             <div class="right">
                 <img src="imgs/stroke_gogo.jpeg" alt="gogo">
-                <p>인디(rock) 스러운 주법<br>16비트 주법인데 쉬운 편에 속하는 16비트라 많이 사랑받는 스트로크입니다.<br>보통 강세를 세번째 다운스트로크에 많이 넣습니다.</p>
+                <p><strong>인디(rock) 스러운 주법</strong><br>16비트 주법인데 쉬운 편에 속하는 16비트라 많이 사랑받는 스트로크입니다.<br>보통 강세를 세번째 다운스트로크에 많이 넣습니다.</p>
             </div>
         </div>
-        <div class="modern">
+        <div class="modern clearfix">
             <div class="left">
                 <img src="imgs/stroke_modern.png" alt="modern">
                 <p>꾸밈을 넣어 연주를 하고 싶을 때 많이 쓰이는 16비트 스트로크입니다.<br>강세는 첫 다운스트로크에 넣는 경우가 많습니다.</p>
@@ -165,8 +179,8 @@
                 <h4>모던 스트로크</h4>
             </div>
         </div>
-        <div class="down_btn">
-            <a href="#">깁슨 App 다운받고 영상으로 쉽게 기타 배우기</a>
+        <div class="more_btn">
+            <a href="https://www.youtube.com/c/gibsonguitar">깁슨 App 다운받고 영상으로 쉽게 기타 배우기</a>
         </div>
     </section>
 
@@ -174,11 +188,11 @@
         <div class="family_site">
             <h4>VISIT THE GIBSON BRANDS FAMILY</h4>
             <ul class="clearfix">
-                <li><a href="http://www.steinberger.com/"><img src="imgs/logo/Steinberger.jpg" alt="Steinberger"></a></li>
-                <li class="krk"><a href="https://www.krkmusic.com/"><img src="imgs/logo/KRK.jpg" alt="KRK"></a></li>
-                <li><a href="https://www.epiphone.com/"><img src="imgs/logo/Epiphone.jpg" alt="Epiphone"></a></li>
-                <li><a href="https://www.kramerguitars.com/"><img src="imgs/logo/Kramer.jpg" alt="Kramer"></a></li>
-                <li><a href="https://mesaboogie.com/"><img src="imgs/logo/MesaBoogie.jpg" alt="Mesa Boogie"></a></li>
+                <li><a href="http://www.steinberger.com/"><img src="../imgs/logo/Steinberger.jpg" alt="Steinberger"></a></li>
+                <li class="krk"><a href="https://www.krkmusic.com/"><img src="../imgs/logo/KRK.jpg" alt="KRK"></a></li>
+                <li><a href="https://www.epiphone.com/"><img src="../imgs/logo/Epiphone.jpg" alt="Epiphone"></a></li>
+                <li><a href="https://www.kramerguitars.com/"><img src="../imgs/logo/Kramer.jpg" alt="Kramer"></a></li>
+                <li><a href="https://mesaboogie.com/"><img src="../imgs/logo/MesaBoogie.jpg" alt="Mesa Boogie"></a></li>
             </ul>
         </div>
 
