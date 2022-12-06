@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Gibson Login</title>
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/register.css">
 
 </head>
 
@@ -14,12 +14,12 @@
 
     <section class="join_wrap">
         <div class="inner_join">
-            <img src="imgs/login_user.png" alt="Gibson Family">
+            <img src="{{ url_for('static', filename='imgs/icons/login_user.png') }}" alt="Gibson Family">
             <h2>회원가입</h2>
 
             <form action="#" name="joinfrm" method="post">
                 <fieldset class="required">
-                   <legend>필수사항 입력</legend>
+                    <legend>필수사항 입력</legend>
                     <table>
                         <tr>
                             <th>아이디*</th>
@@ -49,7 +49,7 @@
                 </fieldset>
                 <fieldset class="optional">
                     <legend>선택사항 입력</legend>
-                    
+
                     <table>
                         <tr>
                             <th>사용하는 기타</th>
@@ -76,7 +76,7 @@
                         </tr>
                     </table>
                 </fieldset>
-                
+
                 <input type="submit" value="가입하기" class="joinbtn">
             </form>
         </div>
