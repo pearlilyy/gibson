@@ -126,6 +126,8 @@ nav {
     text-align: center;
     box-sizing: border-box;
     padding: 10px 6px 70px;
+    color: #777;
+    line-height: 30px;
 }
 
 .user_menu .global {

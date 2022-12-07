@@ -36,14 +36,14 @@ body {
     height: 40px;
     background: none;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #eee;
     outline: none;
     font-size: 18px;
 }
 
 .id input::placeholder,
 .pw input::placeholder {
-    color: #fff;
+    color: #ccc;
     font-size: 18px;
 }
 
@@ -56,7 +56,7 @@ body {
     height: 40px;
     background: none;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #eee;
     outline: none;
     font-size: 18px;
 }

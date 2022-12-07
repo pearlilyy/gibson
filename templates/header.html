@@ -66,6 +66,10 @@
         </nav>
 
         <ul class="user_menu">
+            {% if username != '' %}
+            <li>{{username}} 님 반갑습니다!</li>
+            {% else %}
+            {% endif %}
             <li><a href="login"><img src="{{ url_for('static', filename='imgs/icons/user_white.png') }}"
                         alt="Login"></a>
             </li>

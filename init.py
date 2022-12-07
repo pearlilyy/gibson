@@ -13,9 +13,29 @@ def login():
     return render_template('login.html')
 
 
+@app.route('/login_check', methods=['post'])
+def login_check():
+    username = request.form['userid']
+    userpw = request.form['userpw']
+    return render_template('index.html', username=username)
+
+
 @app.route('/register')
 def register():
     return render_template('register.html')
+
+
+@app.route('/register_new', methods=['post'])
+def register_new():
+    userid = request.form['userid']
+    userpw = request.form['userpw']
+    username = request.form['username']
+    usertel = request.form['usertel']
+    useremail = request.form['useremail']
+    guitar = request.form['guitar']
+    city = request.form['city']
+    regdate = request.form['regdate']
+    return f'Nice to meet you {username}'
 
 
 @app.route('/acc')

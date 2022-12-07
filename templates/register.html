@@ -17,33 +17,33 @@
             <img src="{{ url_for('static', filename='imgs/icons/login_user.png') }}" alt="Gibson Family">
             <h2>회원가입</h2>
 
-            <form action="#" name="joinfrm" method="post">
+            <form action="register_new" name="joinfrm" method="post">
                 <fieldset class="required">
                     <legend>필수사항 입력</legend>
                     <table>
                         <tr>
                             <th>아이디*</th>
                             <td>
-                                <input type="text" name="userid" required>
+                                <input type="text" name="userid" placeholder="ID" required>
                             </td>
                         </tr>
                         <tr>
                             <th>비밀번호*</th>
                             <td>
-                                <input type="password" name="userpw" required>
+                                <input type="password" name="userpw" placeholder="password" required>
                             </td>
                         </tr>
                         <tr>
                             <th>이름*</th>
-                            <td><input type="text" name="username" required></td>
+                            <td><input type="text" name="username" placeholder="name" required></td>
                         </tr>
                         <tr>
                             <th>핸드폰 번호*</th>
-                            <td><input type="tel" name="usertel" required></td>
+                            <td><input type="tel" name="usertel" placeholder="phone" required></td>
                         </tr>
                         <tr>
                             <th>이메일*</th>
-                            <td><input type="email" name="useremail"></td>
+                            <td><input type="email" name="useremail" placeholder="email" required></td>
                         </tr>
                     </table>
                 </fieldset>
@@ -54,7 +54,7 @@
                         <tr>
                             <th>사용하는 기타</th>
                             <td>
-                                <select name="guitar" id="">
+                                <select name="guitar" id="guitar">
                                     <option value="guitar-type">기타 종류</option>
                                     <option value="electric">일렉트릭 기타</option>
                                     <option value="acoustic">어쿠스틱 기타</option>
@@ -71,7 +71,7 @@
                         <tr>
                             <th>가입일</th>
                             <td>
-                                <input type="date" name="date" hidden>
+                                <input type="date" name="regdate" hidden>
                             </td>
                         </tr>
                     </table>
