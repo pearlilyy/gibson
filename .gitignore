@@ -1,2 +1,7 @@
 static/imgs
-models.py
+venv
+alembic
+__pycache__
+data
+docker-compose.yml
+db.sqlite
