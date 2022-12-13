@@ -28,19 +28,21 @@ cur.execute(
     """
         CREATE TABLE users(
             id SERIAL PRIMARY KEY,
-            username TEXT NOT NULL UNIQUE,
+            username TEXT NOT NULL,
             password TEXT NOT NULL,
             name TEXT NOT NULL,
             email TEXT NOT NULL,
             phone TEXT NOT NULL,
-            reg_date DATE NOT NULL
+            regdate DATE NOT NULL,
+            guitar_type TEXT,
+            city TEXT
         );
     """
 )
 
 cur.execute(
     """
-    INSERT INTO users VALUES 
+    INSERT INTO users VALUES
     (1, 'jones', 'ososo0303', 'jin', 'fjis@gmail.com', '4243430192', '020330'),
     (2, 'hi', 'dfeeeeee', 'ebby', 'jiji@gmail.com', '4243430192', '020330'),
     (3, 'gosdg', 'asdfsadaf', 'query', 'fdsf@gmail.com', '4243430192', '020330'),
@@ -51,6 +53,16 @@ cur.execute(
     (8, 'ojoj', 'sesesesese', 'venus', 'sd@gmail.com', '4243430192', '020330')
     """
 )
+# userid = 'userid'
+# userpw = 'userpw'
+# username = 'username'
+# usertel = 'usertel'
+# useremail = 'useremail'
+# guitar = 'guitar'
+# city = 'city'
+# regdate = 'regdate'
+# cur.execute('INSERT INTO users VALUES (id, username, password, name, email, phone, regdate, guitar_type, city)', (
+#     9, userid, userpw, username, useremail, usertel, regdate, guitar, city))
 
 # Execute a query
 cur.execute(
@@ -94,17 +106,13 @@ for i, v in enumerate(gibson_records):
     print(str(i+1) + ".", v[0].capitalize(), v[1].capitalize())
 
 '''
-실행 방법
+name = 'SangJung'
+phoneNumber = '010-5670-2343'
+cur.execute('INSERT INTO PhoneBook VALUES(:name, :phoneNumber);', {"name":name, "phoneNumber":phoneNumber})
+'''
 
-cd week3/psycopg2
+'''
+실행 방법
 python veggies.py
 
-'''
-
-'''
-참고) 새 폴더를 terminal을 통해 만들고 싶을 때
-mkdir week3/psycopg2
-
-2) Create a file named veggies.py using the touch command 새 파일을 만들고 싶을 때
-touch veggies.py
 '''
