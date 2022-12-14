@@ -1,8 +1,9 @@
 static/imgs
 venv
-alembic
 __pycache__
 data
 docker-compose.yml
 db.sqlite
 src
+migrations
+alembic.ini

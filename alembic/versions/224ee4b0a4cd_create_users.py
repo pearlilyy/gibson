@@ -17,27 +17,26 @@ depends_on = None
 
 
 def upgrade():
-    op.execute(
-        """
-        CREATE TABLE users(
-            id SERIAL PRIMARY KEY,
-            username TEXT NOT NULL,
-            password TEXT NOT NULL,
-            first_name TEXT NOT NULL,
-            last_name TEXT NOT NULL,
-            email TEXT NOT NULL,
-            phone TEXT NOT NULL,
-            reg_date TIMESTAMP NOT NULL,
-            guitar_type TEXT,
-            city TEXT
-        );
-        """
-    )
+    op.create_table('users',
+                    sa.Column('id', sa.Integer(),
+                              autoincrement=True, nullable=False),
+                    sa.Column('username', sa.String(
+                        length=20), nullable=False),
+                    sa.Column('password', sa.String(
+                        length=50), nullable=False),
+                    sa.Column('first_name', sa.String(
+                        length=20), nullable=False),
+                    sa.Column('last_name', sa.String(
+                        length=20), nullable=False),
+                    sa.Column('email', sa.String(length=20), nullable=False),
+                    sa.Column('phone', sa.String(length=20), nullable=False),
+                    sa.Column('reg_date', sa.TIMESTAMP, nullable=False),
+                    sa.Column('guitar_type', sa.String(
+                        length=50), nullable=False),
+                    sa.Column('city', sa.String(length=20), nullable=False),
+                    sa.PrimaryKeyConstraint('id')
+                    )
 
 
 def downgrade():
-    op.execute(
-        """
-        DROP TABLE users;
-        """
-    )
+    op.drop_table('users')

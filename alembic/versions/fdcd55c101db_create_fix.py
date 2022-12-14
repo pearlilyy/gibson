@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 # revision identifiers, used by Alembic.
 revision = 'fdcd55c101db'
-down_revision = '224ee4b0a4cd'
+down_revision = None
 branch_labels = None
 depends_on = None
 
@@ -33,4 +33,4 @@ def upgrade():
 
 
 def downgrade():
-    op.drop_table('users')
+    op.drop_table('fix')
