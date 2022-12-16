@@ -1,0 +1,639 @@
+@charset "utf-8";
+
+
+/*/////Gibson Index////////////////////////////*/
+body {
+    overflow-x: hidden;
+    color: #333;
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    color: #333;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+
+
+/*//main///////////////////////////////////////*/
+main {
+    width: 100%;
+    height: 900px;
+    background: url(../imgs/main.jpg) no-repeat top/cover;
+}
+
+main .main_wrap {
+    width: 1200px;
+    height: 750px;
+    margin: 0 auto;
+    /*outline: 2px solid red;*/
+    position: relative;
+}
+
+main .main_wrap .main_txt {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /*outline: 2px solid blue;*/
+}
+
+main .main_wrap .main_txt h1 {
+    color: #eee;
+    text-align: right;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+main .main_wrap .main_txt p.red {
+    color: #792710;
+    text-align: right;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+main .main_wrap .main_txt p.main_ex {
+    color: #eee;
+    text-align: right;
+    line-height: 25px;
+}
+
+main .main_wrap .mouse {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+main .main_wrap .mouse img {
+    width: 50px;
+}
+
+
+/*//section guitars///////////////////////////////////////*/
+.guitars {
+    padding-top: 100px;
+    width: 100%;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+.guitars .guitars_wrap {
+    width: 1280px;
+    margin: 0 auto;
+    background: url(../imgs/guitars_bg.png) no-repeat 50% 20%;
+    /*outline: 2px solid lime;*/
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.guitars .guitars_wrap>h2 {
+    margin-bottom: 20px;
+}
+
+.guitars .guitars_wrap>a {
+    margin-bottom: 20px;
+    color: #daa150;
+    letter-spacing: -2px;
+}
+
+.guitars .guitars_wrap>a:hover {
+    text-decoration: underline;
+}
+
+.guitars .guitars_wrap .guitar_img {
+    padding-top: 30px;
+    width: 100%;
+    position: relative;
+    /*outline: 2px solid yellow;*/
+    height: 510px;
+}
+
+.guitars .guitars_wrap .guitar_img a {
+    width: 256px;
+    float: left;
+    box-sizing: border-box;
+    /*outline: 2px solid red;*/
+}
+
+.guitars .guitars_wrap .guitar_img a img {
+    height: 450px;
+    opacity: 0.6;
+    transition: all .6s ease-in-out;
+}
+
+.guitar_on {
+    opacity: 1 !important;
+    height: 500px !important;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6));
+}
+
+.guitars .guitars_wrap .guitar_txt {
+    width: 630px;
+    margin: 0 auto;
+    margin-top: 10px;
+    /*outline: 2px solid yellow;*/
+    text-align: center;
+    position: relative;
+}
+
+.guitars .guitars_wrap .guitar_txt #prev {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    /*background: url(../imgs/icons/prev.png) no-repeat 0 65%;*/
+    /*cursor: pointer;*/
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+
+.guitars .guitars_wrap .guitar_txt #prev img {
+    padding-right: 10px;
+}
+
+.guitars .guitars_wrap .guitar_txt ul {
+    width: 350px;
+    height: 140px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.guitars .guitars_wrap .guitar_txt ul li {
+    color: #888;
+    width: 100%;
+    line-height: 30px;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.txt_on {
+    display: block !important;
+}
+
+.guitars .guitars_wrap .guitar_txt ul li span {
+    color: #daa150;
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.guitars .guitars_wrap .guitar_txt #next {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    /*background: url(../imgs/icons/next.png) no-repeat 100% 65%;*/
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+
+.guitars .guitars_wrap .guitar_txt #next img {
+    padding-left: 10px;
+}
+
+.guitars .guitars_wrap .btns {
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    transform: translate(-50%);
+    /*background-color: red;*/
+}
+
+.guitars .guitars_wrap .btns ul li {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #d4d4d4;
+    float: left;
+    /*cursor: pointer;*/
+    text-indent: -9999px;
+}
+
+.btn_on {
+    width: 50px !important;
+    border-radius: 30px !important;
+    background-color: #daa150 !important;
+}
+
+
+
+/*//section musicians///////////////////////////////////////*/
+.musicians {
+    width: 100%;
+}
+
+.musicians .musicians_wrap h2 {
+    padding: 100px 0 125px;
+    position: relative;
+}
+
+.musicians .musicians_wrap h2:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.musicians .musicians_wrap {
+    width: 1280px;
+    background: url(../imgs/musicians_bg_circles.png) no-repeat 0 22%;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    /*outline: 2px solid lime;*/
+    text-align: center;
+}
+
+.musicians .musicians_wrap .musicians_img {
+    margin-bottom: 50px;
+}
+
+.musicians .musicians_wrap .musicians_img ul li {
+    position: relative;
+}
+
+.musicians .musicians_wrap .musicians_img ul li .musician_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 230px;
+    height: 350px;
+    border-radius: 40px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.musicians .musicians_wrap .musicians_img ul li:hover a img {
+    transition: all .6s;
+    transform: translateY(-60px);
+}
+
+.musicians .musicians_wrap .musicians_img ul li:hover .musician_cover {
+    display: none;
+}
+
+.musicians .musicians_wrap .musicians_img ul li:hover strong {
+    background: url(../imgs/musician_bar.jpg) no-repeat 50% 90%;
+}
+
+.musicians .musicians_wrap .musicians_img ul li {
+    /*width: 20%;*/
+    float: left;
+}
+
+.musicians .musicians_wrap .musicians_img ul li~li {
+    margin-left: 32.5px;
+}
+
+.musicians .musicians_wrap .musicians_img ul li a img {
+    border-radius: 40px 0;
+}
+
+.musicians .musicians_wrap .musicians_img ul li strong {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 0 20px;
+}
+
+.musicians .musicians_wrap .musicians_img ul li .musician_name {
+    color: #999;
+}
+
+.musicians .musicians_wrap .musicians_btn {
+    background: #daa150;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 25px;
+}
+
+.musicians .musicians_wrap .musicians_btn:hover {
+    background: #eee;
+}
+
+.musicians .musicians_wrap .musicians_btn:hover a {
+    color: #daa150;
+    font-weight: 500;
+}
+
+.musicians .musicians_wrap .musicians_btn a {
+    color: #fff;
+    transition: all .4s;
+}
+
+
+
+/*//section banner///////////////////////////////////////*/
+.banner {
+    width: 100%;
+    height: 560px;
+    background: url(../imgs/main_banner_bg.png) no-repeat 50% 50%;
+}
+
+.banner .banner_wrap {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 260px;
+    position: relative;
+}
+
+.banner_wrap .banner_txt {
+    float: left;
+}
+
+.banner .banner_wrap h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.banner .banner_wrap h3 {
+    color: white;
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+
+.banner .banner_wrap p {
+    color: white;
+    font-size: 22px;
+    padding-bottom: 40px;
+}
+
+.banner .banner_wrap a {
+    color: #b37317;
+    font-size: 22px;
+    transition: all .2s;
+}
+
+.banner .banner_wrap a:hover {
+    color: #314158;
+    font-weight: 500;
+}
+
+.banner_img .rent_guitar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: all .6s;
+}
+
+.banner_img .rent_guitar:hover {
+    transform: rotate(-60deg);
+}
+
+.banner_img .rent_notes {
+    position: absolute;
+    opacity: 0.5;
+    margin: 70px 0 0 450px;
+}
+
+
+/*//section video///////////////////////////////////////*/
+.video {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.video .video_wrap {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    /*outline: 2px solid blue;*/
+}
+
+.video .video_wrap h2 {
+    padding: 100px 0 60px;
+}
+
+.video .video_wrap h2:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.video .video_wrap>p {
+    color: #777;
+    padding-bottom: 50px;
+}
+
+.video .video_wrap .video_inner {
+    margin: 0 auto;
+    width: 830px;
+    height: 446px;
+    position: relative;
+    margin-bottom: 300px;
+    cursor: pointer;
+}
+
+.video .video_wrap .video_inner:hover .play_btn {
+    transform: scale(1.1) translate(-45%, -45%);
+}
+
+.video .video_wrap .video_inner>img {
+    width: 830px;
+    border-radius: 50px;
+}
+
+.video .video_wrap .video_inner .cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+}
+
+.video .video_wrap .video_inner .play_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s;
+}
+
+.video .video_wrap .video_txt {
+    width: 630px;
+    height: 230px;
+    background-color: white;
+    box-shadow: 0 0 10px #999;
+    border-radius: 0 30px 30px;
+    position: absolute;
+    bottom: -100px;
+    right: 100px;
+}
+
+.video .video_wrap .video_txt h4 {
+    color: #daa150;
+    padding: 25px 0 15px;
+}
+
+.video .video_wrap .video_txt p.video_title {
+    font-size: 17px;
+    padding-bottom: 25px;
+}
+
+.video .video_wrap .video_txt p.grey_txt {
+    color: #777;
+    padding-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.video .video_wrap .video_txt a.video_btn {
+    width: 190px;
+    height: 45px;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #c77259;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 22.5px;
+    letter-spacing: -1px;
+    transition: all .3s;
+}
+
+.video .video_wrap .video_txt a.video_btn:hover {
+    background-color: #eee;
+    color: #c77259;
+    font-weight: 500;
+}
+
+/*//video modal///////////////////////////////////////*/
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: none;
+}
+
+#modal #player {
+    width: 1000px;
+    height: 563px;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#modal #xbtn {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+}
+
+#modal #xbtn a:first-child {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+#modal #xbtn a:last-child {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+
+
+/*//section subscribe///////////////////////////////////////*/
+.subscribe {
+    width: 100%;
+    background-color: #fbf5ed;
+}
+
+.subscribe .subscribe_wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.subscribe .subscribe_wrap h2 {
+    padding: 120px 50px 100px 150px;
+    float: left;
+    color: #333;
+}
+
+.subscribe .subscribe_wrap form {
+    width: 700px;
+    margin: 100px 0;
+    float: left;
+    border: none;
+    color: #999;
+}
+
+.subscribe .subscribe_wrap form #email {
+    width: 470px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #999;
+    height: 30px;
+}
+
+.subscribe .subscribe_wrap form #email::placeholder {
+    color: #999;
+    font-size: 18px;
+}
+
+.subscribe .subscribe_wrap form p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-size: 0.8rem;
+    letter-spacing: -1px;
+    float: left;
+}
+
+.subscribe .subscribe_wrap form p span {
+    color: #c77259;
+    text-decoration: underline;
+}
+
+.subscribe .subscribe_wrap form #subscribe {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 25px 25px 25px 0;
+    background-color: #314158;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.subscribe .subscribe_wrap form #subscribe:hover {
+    background-color: #fff;
+    color: #314158;
+    font-weight: bold;
+}

@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+h3 {
+    padding: 40px;
+    background: url(../imgs/icons/title_guitar.png) no-repeat 1% 35%;
+}
+
+/*main*/
+main {
+    width: 100%;
+    height: 550px;
+    background: url(../imgs/dealers_bg.jpg) no-repeat center;
+    text-align: center;
+}
+main h1 {
+    padding-top: 250px;
+    font-size: 40px;
+    color: white;
+}
+main h2 {
+    padding-top: 15px;
+    font-size: 28px;
+    font-weight: 200;
+    color: white;
+    position: relative;
+    font-family: 'Charter','sans-serif';
+}
+main h2:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #daa150;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+/*dealers*/
+.dealers {
+    margin-top: 100px;
+}
+.dealers_wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+.dealers table {
+    border-collapse: collapse;
+    border-top: 2px solid #daa150;
+    text-align: center;
+    margin: 0 auto;
+}
+.dealers table tr:first-child {
+    background-color: #ecd0a7;
+    line-height: 60px;
+}
+.dealers table tr {
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    text-indent: 20px;
+    position: relative;
+}
+.dealers table tr::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #daa150;
+}
+.dealers table tr:first-child::after {
+    height: 2px;
+}
+.dealers table td button {
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 2px solid #daa150;
+    border-radius: 20px;
+    color: #daa150;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+}
+.dealers table td button:hover {
+    background-color: #daa150;
+    color: #fff;
+}
+.dealers .maps {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.dealers .maps iframe {
+    width: 1200px;
+    height: 500px;
+    display: none;
+}
+.dealers .maps iframe.on {
+    display: block;
+}
+
+
+/*online*/
+.online {
+    width: 1280px;
+    margin: 150px auto 200px;
+}
+.online .Korea, .online .USA {
+    width: 1200px;
+    margin: 0 auto;
+}
+.kdealer a p, .adealer a p {
+    color: #898989;
+}
+.online h4 {
+    color: #daa150;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.online .kdealer {
+    width: 262.5px;
+    height: 200px;
+    margin-bottom: 100px;
+    border: 3px solid #eee;
+    text-align: center;
+    position: relative;
+}
+.online .kdealer:hover {
+    border: 3px solid #fff;
+    transition: all .6s;
+}
+.online .kdealer img {
+    transition: all .6s;
+    margin: 50px 0;
+    width: 220px;
+}
+.online .kdealer:hover img {
+    transform: scale(1.1);
+}
+.online .adealer {
+    width: 262.5px;
+    height: 200px;
+    box-sizing: border-box;
+    margin-right: 50px;
+    border: 3px solid #eee;
+    float: left;
+    text-align: center;
+    margin-bottom: 48px;
+    position: relative;
+}
+.online .adealer:hover {
+    border: 3px solid #fff;
+    transition: all .6s;
+}
+.online .adealer a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.online .adealer:nth-of-type(4n) {
+    margin-right: 0;
+}
+.online .adealer img {
+    margin: 50px 0;
+    transition: all .6s;
+}
+.online .adealer p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 20px;
+}
+.online .adealer:hover img {
+    transform: scale(1.2);
+}
+
+
+/*마우스 오버시 테두리*/
+.kdealer::before,.adealer::before{/*위쪽선*/
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #daa150;
+    transition: width .1s linear .2s;
+}
+.kdealer::after,.adealer::after{/*아래쪽선*/
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #daa150;
+    transition: width .1s linear .2s;
+}
+.kdealer a::before,.adealer a::before{/*오른쪽선*/
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 0%;
+    background-color: #daa150;
+    transition: height .1s linear 0s;
+}
+.kdealer a::after,.adealer a::after{/*왼쪽선*/
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 0%;
+    background-color: #daa150;
+    transition: height .1s linear 0s;
+}
+.kdealer:hover::before,.adealer:hover::before{/*위*/
+    width: 100%;			
+    transition: width .1s linear;
+}
+.kdealer:hover>a::before,.adealer:hover>a::before{/*오른*/
+    height: 100%;
+    transition: height .1s linear .2s;
+}
+.kdealer:hover::after,.adealer:hover::after{/*아래*/
+    width: 100%;
+    transition: width .1s linear 0s;
+}
+.kdealer:hover>a::after,.adealer:hover>a::after{/*왼*/
+    height: 100%;
+    transition: height .1s linear .2s;
+}

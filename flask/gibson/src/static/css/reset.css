@@ -1,0 +1,60 @@
+@charset utf-8;
+
+/* 웹폰트 CSS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+ 
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+/*border:0;*/
+outline:0;
+vertical-align:baseline;
+background:transparent;
+}
+
+body{
+font-family: 'Noto Sans KR', sans-serif;
+line-height:1;
+color: #333;
+}
+
+ol, ul, li{
+list-style:none;
+}
+
+a{
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+text-decoration:none;
+}
+
+img{
+vertical-align:top;
+}
+
+hr{
+height:2px;
+border:0;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

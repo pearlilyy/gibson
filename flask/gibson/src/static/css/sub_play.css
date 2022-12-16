@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*common*/
+h3 {
+    padding: 40px;
+    background: url(../imgs/icons/title_guitar.png) no-repeat 1% 35%;
+}
+
+/*main*/
+main {
+    width: 100%;
+    height: 550px;
+    background: url(../imgs/play_bg.jpg) no-repeat;
+    text-align: center;
+}
+main h1 {
+    padding-top: 250px;
+    font-size: 40px;
+    color: white;
+    font-family: 'BMDOHYEON','sans-serif';
+}
+main h2 {
+    padding-top: 15px;
+    font-size: 28px;
+    font-weight: 200;
+    color: white;
+    position: relative;
+    font-family: 'Charter','sans-serif';
+}
+main h2:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #daa150;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+
+/*code*/
+.code {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.code h3 {
+    margin-bottom: 50px;
+}
+.code p {
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 30px;
+    margin-bottom: 100px;
+    word-break: keep-all;
+}
+.code img {
+    display: block;
+    margin: 0 auto 130px;
+}
+.code .fret img {
+    float: left;
+    margin-right: 125px;
+}
+.code .fret p {
+    float: left;
+    width: 515px;
+    height: 364px;
+    box-sizing: border-box;
+    padding: 150px 0;
+}
+.pose {
+    width: 1280px;
+}
+.pose h3 {
+    margin-bottom: 130px;
+}
+
+
+
+
+
+
+
+
+
+

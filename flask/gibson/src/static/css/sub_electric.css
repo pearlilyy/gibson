@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+body {
+    background: url(../imgs/gibson_purple.png) no-repeat 0 20%;
+}
+.inbody {
+    background: url(../imgs/gibson_beige.png) no-repeat 100% 90%;
+}
+/*main*/
+.main {
+    width: 1280px;
+    margin: 0 auto;
+}
+.main h1 {
+    padding: 150px 0 0 40px;
+    font-size: 30px;
+    background: url(../imgs/icons/flyingV.png) no-repeat 0 100%;
+}
+.main h2 {
+    padding: 10px 45px 40px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #888;
+    position: relative;
+    font-family: 'Charter','sans-serif';
+}
+
+/*guitar_menu*/
+.guitar_menu {
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+    transition: all .6s;
+}
+.guitar_menu ul {
+    float: right;
+    margin-right: 5%;
+}
+.guitar_menu ul li {
+    float: left;
+    padding: 20px;
+}
+.guitar_menu ul li:hover a {
+    text-decoration: underline;
+    font-weight: 500;
+}
+.guitar_menu ul li.on {
+    font-size: 30px;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+.guitar_menu ul li.on a {
+    color: #daa150;
+}
+.guitar_menu ul li.on:hover a {
+    text-decoration: none;
+    font-weight: 600;
+}
+.guitar_menu ul li a {
+    color: #333;
+}
+
+
+
+/*guitar_list*/
+.guitar_list {
+    width: 1200px;
+    margin: 100px auto 0;
+}
+.guitar_list .guitar_box {
+    width: 285px;
+    height: 670px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.guitar_list .guitar_box .guitar_bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #eee;
+    position: absolute;
+    transition: all .3s;
+}
+.guitar_list .guitar_box img {
+    padding: 20px 0;
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    left: center;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.guitar_list .guitar_box:hover img {
+    transform: translate(-50%) rotate(10deg);
+}
+.guitar_list .guitar_box p {
+    /*padding: 40px;*/
+    line-height: 1.5;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+    width: 285px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.lespaul, .sg, .es, .designers, .acoustic {
+    margin-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
+.lespaul .guitar_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+.sg .guitar_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+.es .guitar_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+.designers .guitar_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+.acoustic .guitar_box:nth-of-type(4n) {
+    margin-right: 0;
+}
+

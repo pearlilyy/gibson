@@ -1,0 +1,105 @@
+<header>
+    <div class="header_wrap clearfix">
+        <div class="logo_box">
+            <a href=""><img src="{{ url_for('static', filename='imgs/logo/gibson_small.png') }}" alt="Gibson"></a>
+        </div>
+
+        <nav class="clearfix">
+            <ul class="main_menu clearfix">
+                <li>
+                    <a href="history">깁슨소개<span class="menu_bar"></span></a>
+                    <ul class="sub_menu">
+                        <li><a href="history">연혁<img src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="깁슨 연혁 페이지로 이동"></a></li>
+                        <li><a href="feature">깁슨 기타의 특징<img
+                                    src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="깁슨의 특징 페이지로 이동"></a></li>
+                        <li><a href="maintaining">기타 관리 노하우<img
+                                    src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="기타 관리 페이지로 이동"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="electric">제품구매<span class="menu_bar"></span></a>
+                    <ul class="sub_menu">
+                        <li><a href="electric">일렉트릭 기타<img
+                                    src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="일렉트릭 기타 페이지로 이동"></a></li>
+                        <li><a href="acoustic">어쿠스틱 기타<img
+                                    src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="어쿠스틱 기타 페이지로 이동"></a></li>
+                        <li><a href="acc">부품<img src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="부품 페이지로 이동"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="musicians">깁슨의 음악<span class="menu_bar"></span></a>
+                    <ul class="sub_menu">
+                        <li><a href="musicians">깁슨 뮤지션 스토리<img
+                                    src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="뮤지션 스토리 페이지로 이동"></a></li>
+                        <li><a href="play">기타 배우기<img src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="기타 배우기 페이지로 이동"></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="faq">고객지원<span class="menu_bar"></span></a>
+                    <ul class="sub_menu">
+                        <li><a href="fix">수리/튜닝 신청<img
+                                    src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="수리/튜닝 신청 페이지로 이동"></a></li>
+                        <li><a href="dealers">서비스센터/대리점 찾기<img
+                                    src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="서비스센터/대리점 찾기 페이지로 이동"></a></li>
+                        <li><a href="news">소식 &amp; 이벤트<img
+                                    src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="소식&이벤트 페이지로 이동"></a>
+                        </li>
+                        <li><a href="faq">FAQ<img src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="자주 묻는 질문 페이지로 이동"></a></li>
+                        <li><a href="rent">악기 렌트하기<img
+                                    src="{{ url_for('static', filename='imgs/icons/more_icon.png') }}"
+                                    alt="악기 렌트 페이지로 이동"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="user_menu">
+            {% if username != '' %}
+            <li>{{username}} 님 반갑습니다!</li>
+            {% else %}
+            {% endif %}
+            <li><a href="login"><img src="{{ url_for('static', filename='imgs/icons/user_white.png') }}"
+                        alt="Login"></a>
+            </li>
+            <li><a href="#" class="magnifying"><img
+                        src="{{ url_for('static', filename='imgs/icons/magnifying_white.png') }}" alt="Search"></a></li>
+            <li class="global">
+                <a href="#"><img src="{{ url_for('static', filename='imgs/icons/global_white.png') }}"
+                        alt="Language"></a>
+                <ul class="language">
+                    <li><a href="#">한국어</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a></li>
+        </ul>
+    </div>
+</header>
+
+<aside>
+    <div class="aside_in">
+        <h4>What You Need</h4>
+        <ol>
+            <li><a href="https://www.gibson.com/Guitars/Collection/Custom%20Shop">커스텀샵</a></li>
+            <li><a href="https://www.gibson.com/Support/Warranty-Registration">제품 등록</a></li>
+            <li><a href="https://www.gibson.com/Support/Report-Counterfeits">모조품 신고</a></li>
+            <li><a href="https://www.gibson.com/Policy/en-US/StorePolicy">스토어 정책</a></li>
+        </ol>
+    </div>
+</aside>
