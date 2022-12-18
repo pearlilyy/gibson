@@ -31,10 +31,13 @@ def create_app(test_config=None):
     db.init_app(app)
     migrate = Migrate(app, db)
 
-    from .api import index, users, fix, login
+    from .api import index, users, fix, login, login_check, register, register_new
     app.register_blueprint(index.bp)
     app.register_blueprint(users.bp)
     app.register_blueprint(fix.bp)
     app.register_blueprint(login.bp)
+    app.register_blueprint(login_check.bp)
+    app.register_blueprint(register.bp)
+    app.register_blueprint(register_new.bp)
 
     return app
