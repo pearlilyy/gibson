@@ -31,7 +31,8 @@ def create_app(test_config=None):
     db.init_app(app)
     migrate = Migrate(app, db)
 
-    from .api import index, users, fix, login, login_check, register, register_new
+    from .api import index, users, fix, login, login_check, register, register_new, history, maintaining, musicians, news, play, rent, faq, feature, acoustic, electric, acc
+
     app.register_blueprint(index.bp)
     app.register_blueprint(users.bp)
     app.register_blueprint(fix.bp)
@@ -39,5 +40,16 @@ def create_app(test_config=None):
     app.register_blueprint(login_check.bp)
     app.register_blueprint(register.bp)
     app.register_blueprint(register_new.bp)
+    app.register_blueprint(history.bp)
+    app.register_blueprint(maintaining.bp)
+    app.register_blueprint(musicians.bp)
+    app.register_blueprint(news.bp)
+    app.register_blueprint(play.bp)
+    app.register_blueprint(rent.bp)
+    app.register_blueprint(faq.bp)
+    app.register_blueprint(feature.bp)
+    app.register_blueprint(acc.bp)
+    app.register_blueprint(acoustic.bp)
+    app.register_blueprint(electric.bp)
 
     return app

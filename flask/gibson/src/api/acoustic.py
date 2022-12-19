@@ -1,9 +1,9 @@
 from flask import Flask, Blueprint, jsonify, abort, render_template, request
 from ..models import User, Fix, db
 
-bp = Blueprint('login', __name__, url_prefix='/login')
+bp = Blueprint('acoustic', __name__, url_prefix='/acoustic')
 
 
 @bp.route('')
-def login():
-    return render_template('login.html')
+def acoustic():
+    return render_template('sub_acoustic.html')

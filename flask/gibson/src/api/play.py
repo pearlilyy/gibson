@@ -1,9 +1,9 @@
 from flask import Flask, Blueprint, jsonify, abort, render_template, request
 from ..models import User, Fix, db
 
-bp = Blueprint('login', __name__, url_prefix='/login')
+bp = Blueprint('play', __name__, url_prefix='/play')
 
 
 @bp.route('')
-def login():
-    return render_template('login.html')
+def play():
+    return render_template('sub_play.html')
