@@ -17,6 +17,14 @@ def scramble(password: str):
     return hashlib.sha512((password + salt).encode('utf-8')).hexdigest()
 
 
+def enc(userpw: str):
+    key = Fernet.generate_key()
+    fernet = Fernet(key)
+    enc_pw = fernet.encrypt(userpw.encode())
+    dec_pw = fernet.decrypt(userpw).decode()
+    return enc_pw
+
+
 @bp.route('', methods=['POST'])
 def register_new():
     username = request.form['username']
@@ -36,14 +44,11 @@ def register_new():
     if len(username) < 3 or len(userpw) < 8:
         return 'Please set at least 3 characters for the ID and at lease 8 numbers of the password'
 
-    key = Fernet.generate_key()
-    fernet = Fernet(key)
-    enc_pw = fernet.encrypt(userpw.encode())
     # construct User
     u = User(
         username=username,
         # password=scramble(userpw),
-        password=enc_pw,
+        password=enc(userpw),
         first_name=first_name,
         last_name=last_name,
         email=useremail,

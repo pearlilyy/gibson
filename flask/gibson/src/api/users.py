@@ -13,7 +13,7 @@ def scramble(password: str):
 
 
 @bp.route('', methods=['GET'])  # decorator takes path and list of HTTP verbs
-def index():
+def users():
     users = User.query.all()  # ORM performs SELECT query
     result = []
     for u in users:
@@ -21,10 +21,10 @@ def index():
     return jsonify(result)  # return JSON response
 
 
-@bp.route('/<int:id>', methods=['GET'])
-def show(id: int):
-    u = User.query.get_or_404(id)
-    return jsonify(u.serialize())
+# @bp.route('', methods=['GET'])
+# def users():
+#     u = User.query.get_or_404()
+#     return jsonify(u.serialize())
 
 
 @bp.route('', methods=['POST'])
