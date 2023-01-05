@@ -5,12 +5,14 @@ from ..models import User, Fix, db
 import hashlib
 import secrets
 from cryptography.fernet import Fernet
+import bcrypt
 
 # ref: https://www.geeksforgeeks.org/how-to-encrypt-and-decrypt-strings-in-python/
 
 bp = Blueprint('register_new', __name__, url_prefix='/register_new')
 
 
+# 1. encode password
 def scramble(password: str):
     """Hash and salt the given password"""
     salt = secrets.token_hex(16)
@@ -18,10 +20,16 @@ def scramble(password: str):
 
 
 def enc(userpw: str):
-    key = Fernet.generate_key()
-    fernet = Fernet(key)
-    enc_pw = fernet.encrypt(userpw.encode())
-    dec_pw = fernet.decrypt(userpw).decode()
+    # 2. encode password
+    # key = Fernet.generate_key()
+    # fernet = Fernet(key)
+    # enc_pw = fernet.encrypt(userpw.encode())
+
+    # 3. encode password
+    # .encode() = Strings must be encoded before hashing
+    enc_pw = bcrypt.hashpw(password=userpw.encode(
+        'utf-8'), salt=bcrypt.gensalt())
+    enc_pw = enc_pw.decode()
     return enc_pw
 
 
