@@ -6,4 +6,4 @@ bp = Blueprint('electric', __name__, url_prefix='/electric')
 
 @bp.route('')
 def electric():
-    return render_template('sub_electric.html')
+    return render_template('sub_electric.html', title='Gibson Electric Guitar')

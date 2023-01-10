@@ -6,4 +6,4 @@ bp = Blueprint('history', __name__, url_prefix='/history')
 
 @bp.route('')
 def history():
-    return render_template('sub_history.html')
+    return render_template('sub_history.html', title='Gibson History')

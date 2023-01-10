@@ -6,4 +6,4 @@ bp = Blueprint('rent', __name__, url_prefix='/rent')
 
 @bp.route('')
 def rent():
-    return render_template('sub_rent.html')
+    return render_template('sub_rent.html', title='Gibson Guitar Rent')

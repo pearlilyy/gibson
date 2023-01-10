@@ -6,4 +6,4 @@ bp = Blueprint('faq', __name__, url_prefix='/faq')
 
 @bp.route('')
 def faq():
-    return render_template('sub_faq.html')
+    return render_template('sub_faq.html', title='Gibson Frequently Asked Questions')

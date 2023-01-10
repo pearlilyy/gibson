@@ -6,4 +6,4 @@ bp = Blueprint('play', __name__, url_prefix='/play')
 
 @bp.route('')
 def play():
-    return render_template('sub_play.html')
+    return render_template('sub_play.html', title='Gibson How To Play')

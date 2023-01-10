@@ -6,4 +6,4 @@ bp = Blueprint('maintaining', __name__, url_prefix='/maintaining')
 
 @bp.route('')
 def maintaining():
-    return render_template('sub_maintaining.html')
+    return render_template('sub_maintaining.html', title='Gibson Guitar Maintaining')

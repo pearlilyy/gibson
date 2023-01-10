@@ -6,4 +6,4 @@ bp = Blueprint('feature', __name__, url_prefix='/feature')
 
 @bp.route('')
 def feature():
-    return render_template('sub_feature.html')
+    return render_template('sub_feature.html', title='Gibson Features')

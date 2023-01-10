@@ -6,4 +6,4 @@ bp = Blueprint('news', __name__, url_prefix='/news')
 
 @bp.route('')
 def news():
-    return render_template('sub_news.html')
+    return render_template('sub_news.html', title='Gibson News')
