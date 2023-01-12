@@ -2,9 +2,9 @@
 <html lang="ko">
 
 {% include 'sub_head.html' ignore missing %}
-<link rel="stylesheet" href="css/sub_feature.css">
-<script src="js/sub_main.js"></script>
-<script src="js/sub_feature.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='}css/sub_feature.css') }">
+<script src="{{ url_for('static', filename='js/sub_main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sub_feature.js') }}"></script>
 
 <body>
 
@@ -89,11 +89,11 @@
                     </ul>
                 </div>
                 <div class="dbar">
-                    <img id="bar" src="imgs/icons/drag_bar.png" alt="drag bar">
+                    <img id="bar" src="{{ url_for('static', filename='imgs/icons/drag_bar.png') }}" alt="drag bar">
                 </div>
             </div>
             <a href="https://www.youtube.com/user/GibsonGuitarCorp" class="process_btn">깁슨 유튜브 팔로우하러 가기
-                <img src="imgs/icons/more_r.png" alt="깁슨 유튜브 페이지로 이동">
+                <img src="{{ url_for('static', filename='imgs/icons/more_r.png') }}" alt="깁슨 유튜브 페이지로 이동">
                 <span>click</span>
             </a>
         </div>

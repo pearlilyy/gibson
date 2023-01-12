@@ -2,10 +2,10 @@
 <html lang="ko">
 
 {% include 'sub_head.html' ignore missing %}
-<link rel="stylesheet" href="css/sub_fix.css">
-<link rel="stylesheet" href="css/style4.css">
-<script src="js/sub_main.js"></script>
-<script src="js/sub_fix.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sub_fix.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}">
+<script src="{{ url_for('static', filename='js/sub_main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sub_fix.js') }}"></script>
 
 <body>
     {% include 'sub_header.html' ignore missing %}
@@ -30,7 +30,7 @@
                         <div class="ch-info-wrap">
                             <div class="ch-info">
                                 <div class="ch-info-front ch-img-1">
-                                    <img src="imgs/icons/fret_icon.png" alt="fret">
+                                    <img src="{{ url_for('static', filename='imgs/icons/fret_icon.png') }}" alt="fret">
                                     <span class="front_k">프렛수리</span>
                                     <span class="front_e">Fret</span>
                                 </div>
@@ -48,7 +48,8 @@
                         <div class="ch-info-wrap">
                             <div class="ch-info">
                                 <div class="ch-info-front ch-img-2">
-                                    <img src="imgs/icons/broken_head.png" alt="structure">
+                                    <img src="{{ url_for('static', filename='imgs/icons/broken_head.png') }}"
+                                        alt="structure">
                                     <span class="front_k">구조적 수리</span>
                                     <span class="front_e">Structure</span>
                                 </div>
@@ -66,7 +67,8 @@
                         <div class="ch-info-wrap">
                             <div class="ch-info">
                                 <div class="ch-info-front ch-img-1">
-                                    <img src="imgs/icons/broken_neck.png" alt="neck">
+                                    <img src="{{ url_for('static', filename='imgs/icons/broken_neck.png') }}"
+                                        alt="neck">
                                     <span class="front_k">넥 교체</span>
                                     <span class="front_e">Neck</span>
                                 </div>
@@ -84,7 +86,8 @@
                         <div class="ch-info-wrap">
                             <div class="ch-info">
                                 <div class="ch-info-front ch-img-2">
-                                    <img src="imgs/icons/customizing.png" alt="customizing">
+                                    <img src="{{ url_for('static', filename='imgs/icons/customizing.png') }}"
+                                        alt="customizing">
                                     <span class="front_k">커스터마이징</span>
                                     <span class="front_e">Customizing</span>
                                 </div>
@@ -102,7 +105,8 @@
                         <div class="ch-info-wrap">
                             <div class="ch-info">
                                 <div class="ch-info-front ch-img-1">
-                                    <img src="imgs/icons/whole_guitar.png" alt="whole">
+                                    <img src="{{ url_for('static', filename='imgs/icons/whole_guitar.png') }}"
+                                        alt="whole">
                                     <span class="front_k">전체 복원</span>
                                     <span class="front_e">Whole Guitar</span>
                                 </div>

@@ -2,9 +2,9 @@
 <html lang="ko">
 
 {% include 'sub_head.html' ignore missing %}
-<link rel="stylesheet" href="css/sub_history.css">
-<script src="js/sub_main.js"></script>
-<script src="js/sub_history.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sub_history.css') }}">
+<script src="{{ url_for('static', filename='js/sub_main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sub_history.js') }}"></script>
 
 <body>
     {% include 'sub_header.html' ignore missing %}
@@ -18,11 +18,11 @@
         <h3>깁슨은 창립 이래 세계 최고의 기타 브랜드로 명성을 떨치고 있습니다.<br>차별화된 소리를 연구하는 깁슨의 발자취를 둘러보세요.</h3>
 
         <div id="drag">
-            <img src="imgs/icons/history_drag.png" alt="drag_bar" id="bar">
+            <img src="{{ url_for('static', filename='imgs/icons/history_drag.png') }}" alt="drag_bar" id="bar">
         </div>
         <div class="year year1">
             <div class="left">
-                <img src="imgs/Orville_gibson.jpg" alt="Orville Gibson">
+                <img src="{{ url_for('static', filename='imgs/Orville_gibson.jpg') }}" alt="Orville Gibson">
                 <p><span>Orville Gibson</span></p>
             </div>
             <div class="right">
@@ -42,14 +42,14 @@
                 <p>1918년 오빌 깁슨은 세상을 떠나고, 깁슨사는 악기 디자이너 Lloyd Loar 고용</p>
             </div>
             <div class="right">
-                <img src="imgs/Lloyd_Loar.jpg" alt="Lloyd Loar">
+                <img src="{{ url_for('static', filename='imgs/Lloyd_Loar.jpg') }}" alt="Lloyd Loar">
                 <p><span>Lloyd Allayre Loar (1886.01.09-1943.09.14)</span>미국의 음악가, 악기 디자이너 및 사운드 엔지니어였던 그는 F-5 모델 만돌린과
                     L-5 기타 등의 디자인 작업으로 가장 잘 알려져 있음. Bill Monroe에 의해 유명해진 그가 디자인한 만돌린은 현재 200,000달러를 호가함 </p>
             </div>
         </div>
         <div class="year year3">
             <div class="left">
-                <img src="imgs/mandolin.jpg" alt="Mandolins">
+                <img src="{{ url_for('static', filename='imgs/mandolin.jpg') }}" alt="Mandolins">
                 <p><span>Gibson F-5 Mandolin</span> <span>Gibson L-5 어쿠스틱</span><br>깁슨의 F-5 만돌린은 이후 미국 만돌린의 표준이 됨. L-5
                     어쿠스틱 기타는 "컨트리 음악의 전체 역사에서 가장 중요한 싱글 기타"라고 불리고 있음
                 </p>
@@ -66,13 +66,13 @@
                 <p>최초의 아치탑 할로우바디 일렉트릭 기타인 ES-150을 발매하고 이 때 깁슨의 ES라인이 확립됨</p>
             </div>
             <div class="right">
-                <img src="imgs/ES-150.png" alt="ES-150">
+                <img src="{{ url_for('static', filename='imgs/ES-150.png') }}" alt="ES-150">
                 <p><span>ES-150 "Charlie Christian"</span>ES-150은 세계 최초로 상업적인 성공을 거둔 스페니쉬 스타일의 일렉트릭 기타로 알려져 있음</p>
             </div>
         </div>
         <div class="year year5">
             <div class="left">
-                <img src="imgs/TedMcCarty.jpg" alt="Ted McCarty">
+                <img src="{{ url_for('static', filename='imgs/TedMcCarty.jpg') }}" alt="Ted McCarty">
                 <p><span>Ted McCarty</span>테드 맥카티는 깁슨에 스카웃된지 단 2년만인 1950년에 깁슨의 사장 자리에 오르게 됨. 레스폴 시리즈를 출시한 것으로 유명</p>
             </div>
             <div class="right">
@@ -86,14 +86,14 @@
                 <p>깁슨의 상징 중 하나라 할 수 있는 하단부 컷어웨이를 적용하여 연주의 편의성을 올린 ES-175 발표</p>
             </div>
             <div class="right">
-                <img src="imgs/ES-175.jpg" alt="ES-175">
+                <img src="{{ url_for('static', filename='imgs/ES-175.jpg') }}" alt="ES-175">
                 <p><span>ES-175</span>ES-175는 풀사이즈 할로우바디 기타의 기준점 중 하나가 되었고 많은 재즈 기타리스트들이 깁슨의 악기를 선택하는 계기가 됨
                 </p>
             </div>
         </div>
         <div class="year year7">
             <div class="left">
-                <img src="imgs/LesPaul.jpg" alt="Les Paul Guitarist">
+                <img src="{{ url_for('static', filename='imgs/LesPaul.jpg') }}" alt="Les Paul Guitarist">
                 <p><span>기타리스트 Les Paul</span></p>
             </div>
             <div class="right">
@@ -107,14 +107,14 @@
                 <p>"세미할로우"로 불리는 Thinline 시리즈 발표</p>
             </div>
             <div class="right">
-                <img src="imgs/TheFirst_LesPaul.png" alt="The First Les Paul">
+                <img src="{{ url_for('static', filename='imgs/TheFirst_LesPaul.png') }}" alt="The First Les Paul">
                 <p><span>최초의 Les Paul</span>마호가니 바디에 고전적인 곡선을 살린 아치형의 메이플탑을 올리고 솝바 싱글 픽업을 2개 장착한, 깁슨 레스폴의 기념비적인 첫 모델인
                     "'52 골드탑"'모델</p>
             </div>
         </div>
         <div class="year year9">
             <div class="left">
-                <img src="imgs/ES-355.png" alt="ES-355">
+                <img src="{{ url_for('static', filename='imgs/ES-355.png') }}" alt="ES-355">
                 <p><span>ES-355</span>세계 최초로 상용화되어 발매된 씬라인(Thinline) 아치탑 세미 일렉트릭 기타. 비비킹, 노앨갤러거 등의 유명 뮤지션들이 선택한 기타</p>
             </div>
             <div class="right">

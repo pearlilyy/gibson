@@ -2,9 +2,9 @@
 <html lang="ko">
 
 {% include 'sub_head.html' ignore missing %}
-<link rel="stylesheet" href="css/sub_FAQ.css">
-<script src="js/sub_main.js"></script>
-<script src="js/sub_FAQ.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sub_FAQ.css') }}">
+<script src="{{ url_for('static', filename='js/sub_main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sub_FAQ.js') }}"></script>
 
 <body>
     {% include 'sub_header.html' ignore missing %}

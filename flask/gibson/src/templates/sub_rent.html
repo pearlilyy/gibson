@@ -2,9 +2,9 @@
 <html lang="ko">
 
 {% include 'sub_head.html' ignore missing %}
-<link rel="stylesheet" href="css/sub_rent.css">
-<script src="js/sub_main.js"></script>
-<script src="js/sub_rent.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sub_rent.css') }}">
+<script src="{{ url_for('static', filename='js/sub_main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sub_rent.js') }}"></script>
 
 <body>
 
@@ -20,51 +20,60 @@
         <div class="flowbox">
             <ul class="clearfix">
                 <li>
-                    <a href="#"><img src="imgs/guitars/electric/1956_LesPaul.png" alt="Les Paul"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='imgs/guitars/electric/1956_LesPaul.png') }}"
+                            alt="Les Paul"></a>
                     <a href="#" class="ibox">
                         <p>Les Paul 1956<br><span>₩100,000</span></p>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="imgs/guitars/acoustic/50sJ-45Original.png" alt="50s J-450 Original"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='imgs/guitars/acoustic/50sJ-45Original.png') }}"
+                            alt="50s J-450 Original"></a>
                     <a href="#" class="ibox">
                         <p>J-450 Original 50s<br><span>₩100,000</span></p>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="imgs/guitars/acoustic/j-45.png" alt="J-45"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='imgs/guitars/acoustic/j-45.png') }}"
+                            alt="J-45"></a>
                     <a href="#" class="ibox">
                         <p>J-45<br><span>₩90,000</span></p>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="imgs/guitars/bass/SG_StandardBass.png" alt="SG Standard Bass"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='imgs/guitars/bass/SG_StandardBass.png') }}"
+                            alt="SG Standard Bass"></a>
                     <a href="#" class="ibox">
                         <p>SG Standard Bass<br><span>₩100,000</span></p>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="imgs/guitars/electric/1959_ES-355Reissue.png" alt="ES-355"></a>
+                    <a href="#"><img
+                            src="{{ url_for('static', filename='imgs/guitars/electric/1959_ES-355Reissue.png') }}"
+                            alt="ES-355"></a>
                     <a href="#" class="ibox">
                         <p>ES-335 Reissue 1959<br><span>₩150,000</span></p>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="imgs/guitars/electric/JimiHendrix1969_FlyingV.png"
+                    <a href="#"><img
+                            src="{{ url_for('static', filename='imgs/guitars/electric/JimiHendrix1969_FlyingV.png') }}"
                             alt="Jimi Hendrix 1969 Flying V"></a>
                     <a href="#" class="ibox">
                         <p>Flying V Jimi Hendrix 1969<br><span>₩140,000</span></p>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="imgs/guitars/electric/1959_ES-355WatermelonRedLightAged.png"
+                    <a href="#"><img
+                            src="{{ url_for('static', filename='imgs/guitars/electric/1959_ES-355WatermelonRedLightAged.png') }}"
                             alt="1959 ES-355 Watermelon Red Light Aged"></a>
                     <a href="#" class="ibox">
                         <p>ES-335 Watermelon<br>Red Light Aged 1959<br><span>₩170,000</span></p>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="imgs/guitars/electric/1968_LesPaulCustomReissue.png"
+                    <a href="#"><img
+                            src="{{ url_for('static', filename='imgs/guitars/electric/1968_LesPaulCustomReissue.png') }}"
                             alt="1968 Les Paul Custom Reissue"></a>
                     <a href="#" class="ibox">
                         <p>Les Paul Custom Reissue 1968<br><span>₩100,000</span></p>

@@ -2,9 +2,9 @@
 <html lang="ko">
 
 {% include 'sub_head.html' ignore missing %}
-<link rel="stylesheet" href="css/sub_musicians.css">
-<script src="js/sub_main.js"></script>
-<script src="js/sub_musicians.js"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sub_musicians.css') }}">
+<script src="{{ url_for('static', filename='js/sub_main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sub_musicians.js') }}"></script>
 
 
 <body>
@@ -135,23 +135,30 @@
             <div class="legend_list">
                 <ul class="clearfix">
                     <li><a href="#"><span>Jimi Hendrix</span>
-                            <img src="imgs/legend_Jimi.jpg" alt="Jimi Hendrix"></a></li>
+                            <img src="{{ url_for('static', filename='imgs/legend_Jimi.jpg') }}" alt="Jimi Hendrix"></a>
+                    </li>
                     <li><a href="#"><span>John Lennon</span>
-                            <img src="imgs/legend_John.jpg" alt="John Lennon"></a></li>
+                            <img src="{{ url_for('static', filename='imgs/legend_John.jpg') }}" alt="John Lennon"></a>
+                    </li>
                     <li><a href="#"><span>George Harrison</span>
-                            <img src="imgs/legend_George.png" alt="George Harrison"></a></li>
+                            <img src="{{ url_for('static', filename='imgs/legend_George.png') }}"
+                                alt="George Harrison"></a></li>
                     <li><a href="#"><span>Eric Clapton</span>
-                            <img src="imgs/legend_Eric.jpg" alt="Eric Clapton"></a></li>
+                            <img src="{{ url_for('static', filename='imgs/legend_Eric.jpg') }}" alt="Eric Clapton"></a>
+                    </li>
                     <li><a href="#"><span>Jimmy Page</span>
-                            <img src="imgs/legend_Jimmy.jpg" alt="Jimmy Page"></a></li>
+                            <img src="{{ url_for('static', filename='imgs/legend_Jimmy.jpg') }}" alt="Jimmy Page"></a>
+                    </li>
                     <li><a href="#"><span>Gary Moore</span>
-                            <img src="imgs/legend_Gary.jpg" alt="Gary Moore"></a></li>
+                            <img src="{{ url_for('static', filename='imgs/legend_Gary.jpg') }}" alt="Gary Moore"></a>
+                    </li>
                     <li><a href="#"><span>BB King</span>
-                            <img src="imgs/legend_BBking.jpg" alt="BB King"></a></li>
+                            <img src="{{ url_for('static', filename='imgs/legend_BBking.jpg') }}" alt="BB King"></a>
+                    </li>
                     <li><a href="#"><span>Bob Dylan</span>
-                            <img src="imgs/legend_Bob.jpg" alt="Bob Dylan"></a></li>
+                            <img src="{{ url_for('static', filename='imgs/legend_Bob.jpg') }}" alt="Bob Dylan"></a></li>
                     <li><a href="#"><span>Elvis Presley</span>
-                            <img src="imgs/legend_Elvis.jpg" alt="Elvis Presley">
+                            <img src="{{ url_for('static', filename='imgs/legend_Elvis.jpg') }}" alt="Elvis Presley">
                         </a></li>
                 </ul>
             </div>
@@ -165,19 +172,25 @@
                 <div class="icon_list">
                     <ul class="clearfix">
                         <li>
-                            <a href="#" class="icon_pic"><img src="imgs/KirkHammet.png" alt="Kirk Hammett"></a>
+                            <a href="#" class="icon_pic"><img
+                                    src="{{ url_for('static', filename='imgs/KirkHammet.png') }}"
+                                    alt="Kirk Hammett"></a>
                             <a href="#" class="icon_name">Kirk Hammett of Metallica</a>
                         </li>
                         <li>
-                            <a href="#" class="icon_pic"><img src="imgs/JerryCantrell.jpg" alt="Jerry Cantrell"></a>
+                            <a href="#" class="icon_pic"><img
+                                    src="{{ url_for('static', filename='imgs/JerryCantrell.jpg') }}"
+                                    alt="Jerry Cantrell"></a>
                             <a href="#" class="icon_name">Jerry Cantrell of Alice In Chains</a>
                         </li>
                         <li>
-                            <a href="#" class="icon_pic"><img src="imgs/TomyIommi.jpg" alt="Tony Iommi"></a>
+                            <a href="#" class="icon_pic"><img
+                                    src="{{ url_for('static', filename='imgs/TomyIommi.jpg') }}" alt="Tony Iommi"></a>
                             <a href="#" class="icon_name">Tony Iommi of Black Sabbath</a>
                         </li>
                         <li>
-                            <a href="#" class="icon_pic"><img src="imgs/BobRock.jpg" alt="Bob Rock"></a>
+                            <a href="#" class="icon_pic"><img src="{{ url_for('static', filename='imgs/BobRock.jpg') }}"
+                                    alt="Bob Rock"></a>
                             <a href="#" class="icon_name">Producer Bob Rock</a>
                         </li>
                     </ul>
@@ -211,7 +224,7 @@
                         </ul>
                     </div>
                     <a href="https://www.youtube.com/playlist?list=PL7qLGYJiRJ1hr5qFhq3xFlyNNO1iQPjQU">깁슨 유튜브 팔로우하러 가기
-                        <img src="imgs/icons/more_r.png" alt="깁슨 유튜브 페이지로 이동">
+                        <img src="{{ url_for('static', filename='imgs/icons/more_r.png') }}" alt="깁슨 유튜브 페이지로 이동">
                         <span>click</span>
                     </a>
                 </div>
