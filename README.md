@@ -12,7 +12,7 @@
 4. Connected the templates to the practical functions: login, logout, password hashing, and register functions.
 
 - *Difficulty*
-1. Password decoding; I was able to hash and save the password with Hashlib, but had trouble in decoding.
+Password decoding; I was able to hash and save the password with Hashlib, but had trouble in decoding.
 
 - *Solutions*
-1. Instead of Hashlib and using one-side hashing, I used the same Bcrypt function to encode and decode the password.
+Instead of Hashlib and using one-side hashing, I used the same Bcrypt function to encode and decode the password.
